@@ -1,0 +1,1 @@
+This is going to be a collection of notes about Flexbox. Some of these notes will be inspired by and taken from @samantha_ming and I'll be leaving quotes and links where necessary.

@@ -34,3 +34,4 @@ In order to do this, declare the more widely supported value immediately before 
 #### Interactions with Media Queries
 
 You can also change the values of CSS variables with media queries just like you can regularly declared variables
+
