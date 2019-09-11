@@ -1,4 +1,4 @@
-# Web Development Handbook
+# Webdev Handbook
 
 This is where I will keep notes and improve my HTML and CSS skills in order to become a better developer.
 
