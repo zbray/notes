@@ -20,7 +20,7 @@ Relative Units get their values from something else, their parents' dimensions, 
     Note: This is similar to the typography concept, x-height. X is a good choice for something like this as the character does not have an ascender or descender (parts or serifs that cross the top plane or bottom plane of the character.
 
 ### Width of 0 (ch)
-    This unit’s value will be declared by the visible width of 0 in the current font-family and font-size.
+  This unit’s value will be declared by the visible width of 0 in the current font-family and font-size.
 
 ### font-size (em)
     This unit’s value will be equal to the current font-size.
