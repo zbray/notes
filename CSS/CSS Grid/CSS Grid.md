@@ -1,7 +1,12 @@
-# Properties and Values
+# CSS Grid
+
+## Set Up
+All the elements that will be included in your grid will need to be wrapped in a parent div that will be given the 
 
 
-### Relevant to CSS Grid
+
+
+
 
 
 `grid-template-columns`:
