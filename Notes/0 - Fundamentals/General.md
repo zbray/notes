@@ -12,6 +12,3 @@ In JavaScript we add comments in two ways, one for single-line comments and one 
 ```// Single-line comment```
 
 **Blocks** also known as **multi-line comments** start with ```/*``` and end with ```*/``` . JavaScript will ignore everything between these opening and closing tags. This is also the same syntax used for all CSS comments, regardless of the number of lines used.
-
-```*/ This block 
-spans multiple lines */```
