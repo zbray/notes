@@ -36,3 +36,6 @@
 
 `git log` - show a log of all commits
 
+### PC only 
+
+`explorer .` or `start .` will open an explorer window at the current directory
