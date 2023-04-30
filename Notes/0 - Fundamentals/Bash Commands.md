@@ -19,3 +19,5 @@
 `git add (file)` - add specific files to git staging area
 `git add .` - add all files to git staging area
 `git commit` - commit all changes 
+`git log` - show a log of all commits
+
