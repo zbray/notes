@@ -1,1 +1,2 @@
-### Git General Notes
+## Git General Notes
+
