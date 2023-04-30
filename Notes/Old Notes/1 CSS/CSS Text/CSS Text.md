@@ -2,7 +2,6 @@
 
 `text-align: justify`
 
-
 # text-transform
 "The text-transform property in CSS is used to change the appearance of text. It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements."
 

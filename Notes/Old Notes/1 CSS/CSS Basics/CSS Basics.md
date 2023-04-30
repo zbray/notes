@@ -1,4 +1,4 @@
-# CSS Basics
+## CSS Basics
 
 ### CSS Variables
 Larger, complicated websites can contain a lot of CSS code. Many of the CSS rules will be repeated sometimes in hundreds of places. In order to simplify the process of repeating necessary code, in order to make it easier to change CSS rules by only having to change one line of code and to make the repeated rules more familiar and easier to read we use variables.
