@@ -9,3 +9,4 @@ Can generate .gitignore files for a specific language, IDE, etc
 
 A Map of undersea internet cables
 
+[Zero To Mastery Resources](https://zerotomastery.io/resources/)
