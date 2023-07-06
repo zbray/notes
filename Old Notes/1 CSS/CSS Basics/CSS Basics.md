@@ -1,17 +1,18 @@
 ## CSS Basics
 
 ### CSS Variables
+
 Larger, complicated websites can contain a lot of CSS code. Many of the CSS rules will be repeated sometimes in hundreds of places. In order to simplify the process of repeating necessary code, in order to make it easier to change CSS rules by only having to change one line of code and to make the repeated rules more familiar and easier to read we use variables.
 
 Variables are available inside the element in which they are created. It is also available within any elements nested within that element. This is known as cascading. Because of cascading, many CSS variables are often defined in the :root element so as they can be used throughout the entire CSS file.
 
-Declaration of the custom property - 
+Declaration of the custom property -
 
 `element {`
 `  --main-bg-color: red;`
 `}`
 
-Re-using the custom property - 
+Re-using the custom property -
 
 `element 2 {`
 `  color: var(--main-bg-color);`
@@ -34,4 +35,3 @@ In order to do this, declare the more widely supported value immediately before 
 #### Interactions with Media Queries
 
 You can also change the values of CSS variables with media queries just like you can regularly declared variables
-
