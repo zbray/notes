@@ -1,8 +1,16 @@
 ### CSS Basics
 
-#### Terms
+#### What is it?
 
-#### CSS Variables
+Cascading Style Sheets - the way that style is applied cascades like a waterfall - starting at the most general, moving to the most specific.
 
-Large, complicated websites can contain a lot of CSS. Many of the CSS rules will be repeated sometimes in hundreds of places. In order to simplify the process of repeating code and to make it easier to change we use variables.
+#### How is it used?
 
+CSS can be added to a webpage in 3 different ways
+
+Inline
+Code can be added to an html document
+
+```html
+<tag style="css" />
+```
