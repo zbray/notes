@@ -1,6 +1,6 @@
-### CSS
+## CSS
 
-#### What is it?
+### Definition and Use
 
 Cascading Style Sheets - the way that style is applied cascades like a waterfall - starting at the most general, moving to the most specific.
 
@@ -14,7 +14,7 @@ CSS can be added to a webpage in 3 different ways
 <tag style="css" />
 ```
 
-remember, normally attributes have the name of the attribute, equals sign, and value for the attribute
+Normally attributes have the name of the attribute, equals sign, and value for the attribute
 here the name is "style" and the valule is the css code.
 the fist part here is the property we want to change, "background" and the value we want to set it to "blue
 
@@ -54,7 +54,7 @@ Internal CSS is only used for single page webpages.
 **External** CSS links to an external CSS document
 
 ```html
-<link ref="stylesheet" href="style.css" />
+<link href="./styles.css" rel="stylesheet" />
 ```
 
 External CSS styling is useful for multi-page websites
@@ -68,5 +68,18 @@ The link element needs two properties: the "rel" which determines the role the l
 External is most common.
 
 ```html
-<link ref="stylesheet" href="./styles.css" />
+<link href="./styles.css" rel="stylesheet" />
 ```
+
+### CSS Selectors
+
+Selectors are used to select parts of the html to apply CSS code to.
+
+CSS code is made of 3 parts
+
+selector (paragraph tags), property (color) and value (blue)
+
+#### Types of Selectors
+
+**Element Selector** A selector that applies to every occurance of a selector
+
