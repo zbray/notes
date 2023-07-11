@@ -83,3 +83,31 @@ selector (paragraph tags), property (color) and value (blue)
 
 **Element Selector** A selector that applies to every occurance of a selector
 
+```css
+h2 {
+  color: red;
+}
+```
+
+This will make the color property of every h2 element red.
+
+**Class Selector** A selector that applies to a certain class of elements
+
+```css
+.blue-heading {
+  color: blue;
+}
+```
+
+This will make the color property of all elements with the class red-heading red.
+
+What is a class?
+
+A class is an attribute that can be added to html elements to group the same css rules.
+
+```html
+<h3 class="blue-heading">Heading</h3>
+<h3>Heading</h3>
+```
+
+The html code above will make the h3 element with the class blue-heading blue
