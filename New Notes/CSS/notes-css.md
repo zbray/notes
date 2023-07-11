@@ -99,7 +99,7 @@ This will make the color property of every h2 element red.
 }
 ```
 
-This will make the color property of all elements with the class red-heading red.
+This will make the color property of all html elements with the class red-heading red.
 
 What is a class?
 
@@ -111,3 +111,31 @@ A class is an attribute that can be added to html elements to group the same css
 ```
 
 The html code above will make the h3 element with the class blue-heading blue
+
+**Id Selector** should only be applied to a single element in an entire html document. That html element should only have one id applied to it, this should be a unique element.
+
+```css
+#main {
+  color: grey;
+}
+```
+
+This will make the color property of the html element with the main id grey.
+
+**Attribute selector** can be used to specify elements with specific attributes or attribute values.
+
+````css
+p[draggable="false"]{
+  color:red;
+}```
+````
+
+This css will make all p elements with the draggable value of false red.
+
+**Universal Selector** will apply to every element
+
+````css
+* {
+  color: blue;
+}```
+````
