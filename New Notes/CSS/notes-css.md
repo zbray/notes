@@ -1,20 +1,19 @@
 ## CSS
 
-### Definition and Use
+### What is CSS?
 
-Cascading Style Sheets - the way that style is applied cascades like a waterfall - starting at the most general, moving to the most specific.
+CSS is a language used for describing how documents are arranged and sytled visually.
 
 #### How is it used?
 
-CSS can be added to a webpage in 3 different ways
+CSS is used in three different ways (inline, internal, or external) and applies styling rules to elements on an html document
 
-**Inline** CSS can be added to an html element:
+**Inline** CSS can be added to an html element NOT RECOMMENDED
 
 ```html
 <tag style="css" />
 ```
 
-Normally attributes have the name of the attribute, equals sign, and value for the attribute
 here the name is "style" and the valule is the css code.
 the fist part here is the property we want to change, "background" and the value we want to set it to "blue
 
@@ -24,7 +23,7 @@ the fist part here is the property we want to change, "background" and the value
 
 Inline is only used for a single element and not common.
 
-**Internal** CSS
+**Internal** CSS is written inside a <style> element. NOT RECOMMENDED
 
 ```html
 <style>
@@ -32,12 +31,7 @@ Inline is only used for a single element and not common.
 </style>
 ```
 
-Internal CSS is done by utilizing a special html element called the style element
-All code between the open and closing style tags are read as CSS
-
 While Inline CSS applies to a specific element, Internal applies to the entire html document. The below code applies the red value to the background property to all p elements in the html document.
-
-Internal CSS is only used for single page webpages.
 
 ```html
 <html>
