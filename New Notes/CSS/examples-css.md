@@ -38,6 +38,6 @@ form {
 }
 `
 
+### Grayscale / Greyscale
 
-### Center
-
+The following text will take the element (best for images) and make them appear as a grey silhouette

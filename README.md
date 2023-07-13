@@ -1,3 +1,3 @@
-# Webdev Handbook
+# Resources
 
-Notes I write and Resources I come across during my work in webdev.
+Notes and resources

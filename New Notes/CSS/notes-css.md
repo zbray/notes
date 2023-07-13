@@ -4,9 +4,11 @@
 
 CSS is a language used for describing how documents are arranged and sytled visually.
 
-#### How is it used?
+### How is it used?
 
-CSS is used in three different ways (inline, internal, or external) and applies styling rules to elements on an html document
+CSS is used by writing styling rules to apply to elements in an html document.
+
+There are three different ways CSS is applied.
 
 **Inline** CSS can be added to an html element NOT RECOMMENDED
 
@@ -21,7 +23,7 @@ the fist part here is the property we want to change, "background" and the value
 <html style="background:blue"></html>
 ```
 
-Inline is only used for a single element and not common.
+Inline is only used for a single element.
 
 **Internal** CSS is written inside a <style> element. NOT RECOMMENDED
 
@@ -133,3 +135,40 @@ This css will make all p elements with the draggable value of false red.
   color: blue;
 }```
 ````
+
+### Semicolons
+
+Every CSS rule needs to end with a semicolon.
+
+### Notes about the color attribute
+
+Color will apply to the color of text when applied to text elements, not the background
+
+### Colors
+
+Color attribute will style the color of the text of text elements
+
+Names: Browsers support 140 different color names to be used as values for color attributes
+
+```css
+p {
+  color: red;
+}
+```
+
+RGB: three digits that result in over 16 million color options
+
+Hex: same color model as RGB but represented with hexadecimal (0-9 and A-F) The first two places in a hexadecimel represent the red, the middle 2 green, and the last two blue.
+
+### General Notes
+
+Alignment properties only move things within the confines of the content.
+
+For example if you give an h2 tag a align right property but also a "width:50%" the h2 tag will align right but only within it's scope of 50% of the page.
+
+### Text Properties
+
+font-weight: controls the boldness or lightness of a given piece of text
+
+text-decoration: controls the appearance of lines on text (under, over, through)
++
