@@ -8,3 +8,6 @@ https://2019.wattenberger.com/blog/css-cascade
 
 http://1linelayouts.glitch.me/
 
+### Font common stats
+
+https://www.cssfontstack.com/

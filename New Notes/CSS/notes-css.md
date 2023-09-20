@@ -102,8 +102,7 @@ What is a class?
 A class is an attribute that can be added to html elements to group the same css rules.
 
 ```html
-<h3 class="blue-heading">Heading</h3>
-<h3>Heading</h3>
+<h3 class="blue-heading">Heading</h3> <h3>Heading</h3>
 ```
 
 The html code above will make the h3 element with the class blue-heading blue
@@ -120,21 +119,21 @@ This will make the color property of the html element with the main id grey.
 
 **Attribute selector** can be used to specify elements with specific attributes or attribute values.
 
-````css
-p[draggable="false"]{
-  color:red;
-}```
-````
+```css
+p[draggable="false"] {
+  color: red;
+}
+```
 
 This css will make all p elements with the draggable value of false red.
 
 **Universal Selector** will apply to every element
 
-````css
+```css
 * {
   color: blue;
-}```
-````
+}
+```
 
 ### Semicolons
 
@@ -168,7 +167,76 @@ For example if you give an h2 tag a align right property but also a "width:50%" 
 
 ### Text Properties
 
-font-weight: controls the boldness or lightness of a given piece of text
+font-weight: controls the boldness or lightness of a given piece of text (400 is normal and 700 is bold) (not all font-weight numbers exist for all fonts)
 
-text-decoration: controls the appearance of lines on text (under, over, through)
-+
+text-decoration: controls the appearance of lines on text (under, over, through; colored, dotted, etc)
+
+text-align: sets the horizontal alignment inside a block element or table-cell box
+
+line-height: controls the height of a text box.
+
+letter-spacing: sets horizontal spacing between characters
+
+font-family: used as a list of fonts in order of preference for users to fall back on if they are not available.
+(first font: specific
+second font: less specific/2nd option
+family)
+
+### Font Size
+
+There are different units for font sizes.
+
+#### Relative:
+
+EM:
+REM:
+VH:
+VW:
+%:
+
+#### Absolute:
+
+PX: pixels, most commonly used absolute unit. not recommended for responsive websites
+PT: points,
+CM: centimeters
+IN: inches
+MM: milimeters
+
+### CSS Specificity
+
+How does CSS decide what style to apply when there is a conflict
+
+### CSS Selectors
+
+Recap on CSS Rules:
+
+Everything you do in CSS follows this basic pattern:
+
+```css
+selector {
+  property: value;
+}
+```
+
+#### Universal Selector This will select everything
+
+```css
+* {
+  color: black;
+}
+```
+
+#### Element Selector
+
+This will select every element of a given type
+
+```css
+img {
+  width: 100px;
+  height: 100px;
+}
+```
+
+```
+
+```
