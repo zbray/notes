@@ -1,56 +1,52 @@
-## CSS
+## CSS Basics
 
 ### What is CSS?
 
-CSS is a language used for describing how documents are arranged and sytled visually.
+CSS is a style sheet language used to selectively style HTML elements.
 
+
+
+```css
+p {
+  color: red;
+}
+```
+
+CSS code includes a Selector and a Declaration. 
+
+The Selector (`p` tag in this example) selects the HTML element to be stylized and the Declaration is the rule.
+
+The Declaration here is made of the Property and Property Value, here the `color` property is being set to `red`
+ 
 ### How is it used?
 
-CSS is used by writing styling rules to apply to elements in an html document.
+**Inline CSS** 
 
-There are three different ways CSS is applied.
-
-**Inline** CSS can be added to an html element NOT RECOMMENDED
+Inline styles are defined within the "style" attribute of the individual element to be stylized, although this is not recommended. 
 
 ```html
-<tag style="css" />
+<p style="background:blue"></p>
 ```
 
-here the name is "style" and the valule is the css code.
-the fist part here is the property we want to change, "background" and the value we want to set it to "blue
 
-```html
-<html style="background:blue"></html>
-```
+**Internal CSS**
 
-Inline is only used for a single element.
-
-**Internal** CSS is written inside a <style> element. NOT RECOMMENDED
+Internal style sheets can be used when a specific HTML page has unique style rules, although this is not recommended
 
 ```html
 <style>
-  css
+  body {
+    background-color: black;
+  }
 </style>
 ```
 
-While Inline CSS applies to a specific element, Internal applies to the entire html document. The below code applies the red value to the background property to all p elements in the html document.
+**External CSS**
+
+External style sheets are separate `.css` files that can store many rules.
 
 ```html
-<html>
-  <head>
-    <style>
-      p {
-        background: red;
-      }
-    </style>
-  </head>
-</html>
-```
-
-**External** CSS links to an external CSS document
-
-```html
-<link href="./styles.css" rel="stylesheet" />
+<link rel="stylesheet" href="./styles.css"  />
 ```
 
 External CSS styling is useful for multi-page websites
@@ -125,7 +121,8 @@ p[draggable="false"] {
 }
 ```
 
-This css will make all p elements with the draggable value of false red.
+The code above will make all `p` elements with the draggable value of `false` red.
+
 
 **Universal Selector** will apply to every element
 
@@ -135,13 +132,9 @@ This css will make all p elements with the draggable value of false red.
 }
 ```
 
-### Semicolons
+Some CSS tips:
+- Every CSS rule needs to end with a semicolon.
 
-Every CSS rule needs to end with a semicolon.
-
-### Notes about the color attribute
-
-Color will apply to the color of text when applied to text elements, not the background
 
 ### Colors
 
@@ -240,3 +233,9 @@ img {
 ```
 
 ```
+
+### CSS Variables
+
+Larger, complicated websites can contain a lot of CSS code. Many of the CSS rules will be repeated sometimes in hudreds of places. In order to reduce the change for errors and to streamline the process of repeating and editing CSS rules we can use Variables and define them in one place to use the same property at many locations.
+
+For example if our main text color is a certain shade of blue instead of typing in the color everytime we can define the color once, and then referenced throughout our code. Another benefit to this is readability, ``--main-text-color`` is easier to read than a hexadecimal color.
