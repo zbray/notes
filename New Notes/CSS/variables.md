@@ -1,4 +1,3 @@
-## CSS Basics
 
 ### CSS Variables
 
@@ -25,13 +24,3 @@ Important - Sometimes the browser may not be able to find the variable so it's a
 `background: var (--main-bg-color, red);`
 
 This can also be useful while debugging.
-
-#### Compatibility Improvements
-
-Internet Explorer doesn't support, among many things, CSS variables. So it's important to give cover your code for these unfortunate situations.
-
-In order to do this, declare the more widely supported value immediately before the declaration with the variable on a separate line that way when the newer browser runs both, it will render the latter of the two values, the more desirable one, and older browsers will render the first rule, and skip the rule they can't run.
-
-#### Interactions with Media Queries
-
-You can also change the values of CSS variables with media queries just like you can regularly declared variables
