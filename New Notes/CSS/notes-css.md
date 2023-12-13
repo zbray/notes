@@ -1,6 +1,6 @@
-## CSS Basics
+# CSS Basics
 
-### What is CSS?
+## What is CSS?
 
 CSS is a style sheet language used to selectively style HTML elements.
 
@@ -18,9 +18,9 @@ The Selector (`p` tag in this example) selects the HTML element to be stylized a
 
 The Declaration here is made of the Property and Property Value, here the `color` property is being set to `red`
  
-### How is it used?
+## How is it used?
 
-**Inline CSS** 
+### **Inline CSS** 
 
 Inline styles are defined within the "style" attribute of the individual element to be stylized, although this is not recommended. 
 
@@ -29,7 +29,7 @@ Inline styles are defined within the "style" attribute of the individual element
 ```
 
 
-**Internal CSS**
+### **Internal CSS**
 
 Internal style sheets can be used when a specific HTML page has unique style rules, although this is not recommended
 
@@ -41,29 +41,24 @@ Internal style sheets can be used when a specific HTML page has unique style rul
 </style>
 ```
 
-**External CSS**
+### **External CSS**
 
-External style sheets are separate `.css` files that can store many rules.
+External style sheets are separate files that can store many rules and can be used for multi-page websites. This usage is most common.
+
+To connect the HTML document to the external CSS document you will add a link element to the head of the html.
 
 ```html
 <link rel="stylesheet" href="./styles.css"  />
 ```
 
-External CSS styling is useful for multi-page websites
+The link element needs two properties: the `rel` which determines the role the linked file has in relationship to the HTML file and the `href` which lists the directory
 
-This CSS code lives in an external file, usually styles.css or main.css
-
-To connect the html document to the external css code you will add a link element to the head of the html.
-
-The link element needs two properties: the "rel" which determines the role the linked file has in relationship to the html file and the "href" which lists the directory
-
-External is most common.
 
 ```html
 <link href="./styles.css" rel="stylesheet" />
 ```
 
-### CSS Selectors
+## CSS Selectors
 
 Selectors are used to select parts of the html to apply CSS code to.
 

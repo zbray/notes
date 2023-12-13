@@ -16,5 +16,3 @@ The below values and their effect on the text "Transform me"
 
 # line-height
 This changes the height of each line in a block of text. This changes the amount of vertical space each line of text gets.
-
-# 
