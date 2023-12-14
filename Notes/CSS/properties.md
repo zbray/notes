@@ -20,3 +20,9 @@ family)
 ### Font Size
 
 There are different units for font sizes.
+
+### Shapes
+
+The `box-shadow` property creates a rectangular shadow behind an element's entire box
+
+`drop-shadow` filter function creates a shadow that conforms to the shape (alpha channel) of the image itself
