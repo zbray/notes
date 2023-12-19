@@ -8,11 +8,7 @@ https://2019.wattenberger.com/blog/css-cascade
 
 http://1linelayouts.glitch.me/
 
-### Font common stats
+Font common stats - https://www.cssfontstack.com/
 
-https://www.cssfontstack.com/
 
-### Courses
-
-freeCodeCamp - https://www.freecodecamp.org/
-
+CSS Handbook - https://www.freecodecamp.org/news/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11/
