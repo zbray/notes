@@ -51,5 +51,4 @@ https://www.freecodecamp.org/news/your-first-hugo-blog-a-practical-guide/
 
 https://dev.to/jamesqquick/build-a-pokedex-with-vanilla-javascript-part-2-lj1
 
-
-
+https://dev.to/jenkens/beginner-s-guide-to-react-3986
