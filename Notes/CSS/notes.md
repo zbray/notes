@@ -190,6 +190,8 @@ CM: centimeters
 IN: inches
 MM: milimeters
 
+https://blog.revathskumar.com/2014/04/css-understanding-em-and-rem.html
+
 ### CSS Specificity
 
 How does CSS decide what style to apply when there is a conflict
@@ -225,12 +227,17 @@ img {
 }
 ```
 
-```
+### Pseudo elements
 
-```
+
 
 ### CSS Variables
 
 Larger, complicated websites can contain a lot of CSS code. Many of the CSS rules will be repeated sometimes in hudreds of places. In order to reduce the change for errors and to streamline the process of repeating and editing CSS rules we can use Variables and define them in one place to use the same property at many locations.
 
 For example if our main text color is a certain shade of blue instead of typing in the color everytime we can define the color once, and then referenced throughout our code. Another benefit to this is readability, ``--main-text-color`` is easier to read than a hexadecimal color.
+
+### Offsets
+
+There are 4 offset properties, `top`,`bottom`, `left` and `right` that will tell the browser how far to offset an item relative to where it would be in the normal flow of the html document in the direction away from the named property.
+

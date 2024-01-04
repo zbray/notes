@@ -25,12 +25,16 @@ ex: `grid-template-columns: auto 1fr 2fr`: auto will take into consideration the
 
 ex: `grid-template-columns: repeat(auto-fill, 200px);` will render each column in the grid system as being 200px wide and the container/view will show as many as it can at a time given that static width of each column. The responsiveness of this value is limited as the columns are being given an unchanging width, and this value only lets the number of columns change.
 
-ex: `'grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));` is far more responsive as it is giving the container/view more responsive control over how it renders the grid. Here the page is given less strict rules over the columns - the value here is telling the page to `repeat` (keep the same across the columns given the passed rules about width) `auto-fill` (fill the containter/view with as many columns as can fit)  `minmax(200px, 1fr)` as long as the width stays above 200px and below 1fr) so this will keep each columns width between 200px and 1fr while filling the entire width of the container. This allows for a much more responsive rendering and doesn't leave as much white space as the rule with repeat where a strict number is passed along with  auto-fill
+ex: `'grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));` is far more responsive as it is giving the container/view more responsive control over how it renders the grid. Here the page is given less strict rules over the columns - the value here is telling the page to `repeat` (keep the same across the columns given the passed rules about width) `auto-fill` (fill the containter/view with as many columns as can fit)  `minmax(200px, 1fr)` as long as the width stays above 200px and below 1fr so this will keep each columns width between 200px and 1fr while filling the entire width of the container. This allows for a much more responsive rendering and doesn't leave as much white space as the rule with repeat where a strict number is passed along with  auto-fill
 
-`justify-items:start` - aligns the contents in a grid item along the row axis to the left side of the row. The row axis is each row. If the width of a column is larger than the minimum size of the items in it  and a value of `start` is given to `justify-items` the items will be left justified along the row axis. If a value of `end` is given, the items will be right justified.
+`justify-items:start` - aligns the contents in a grid cell and place it at the furthest left-justified position on the x axis. If the width of a column is larger than the minimum size of the items in it  and a value of `start` is given to `justify-items` the items will be left justified along the row axis. 
+
+`justify-items:end` will do the opposite, right justified.
 
 `grid-template-rows`:
 - defines the way the rows look.
+ex: `grid-template-columns: repeat(auto-fill, 300px);` will create as many 300px wide columns as the broswer's viewport can fit.
+ex `grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); ` will create as many columns as the browser can where the width of the columns are at least 300px wide but no wider than 1fr. 
 
 `grid-gap`:
 - Dictates the space between grids and other elements

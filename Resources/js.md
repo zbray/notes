@@ -5,7 +5,10 @@ Javascript Documentation/Guide - https://javascript.info/
 Clean Code Javascript Github - https://github.com/ryanmcdermott/clean-code-javascript
 GitHub for YDKJ - https://github.com/getify/You-Dont-Know-JS
 Vanilla JS Toolkit - https://vanillajstoolkit.com/
-JavaScript Documentation - https://devdocs.io/javascript/
+JS Documentation - https://devdocs.io/javascript/
+JS Examples - https://www.freecodecamp.org/news/javascript-example/
+
+
 
 Books
 

@@ -14,6 +14,8 @@ Cool CSS Effect - https://www.joshwcomeau.com/react/folding-the-dom/
 
 Transitions and Transformations for beginners
 
+Cascade Explained - https://2019.wattenberger.com/blog/css-cascade
+
 ## Design 
 
 Collection of various Design resources - https://undesign.learn.uno/
