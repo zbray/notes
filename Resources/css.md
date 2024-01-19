@@ -22,3 +22,8 @@ Collection of various Design resources - https://undesign.learn.uno/
 
 
 https://design.facebook.com/toolsandresources/
+
+## Font
+
+Type Terms - https://www.supremo.co.uk/typeterms/
+

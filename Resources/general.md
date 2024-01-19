@@ -30,3 +30,8 @@ Lorem Ipsum for photos - https://picsum.photos/
 GitHub Packages - https://github.com/features/packages
 
 Web Assembly at eBay - https://innovation.ebayinc.com/tech/engineering/webassembly-at-ebay-a-real-world-use-case/
+
+## Terms
+
+Separation of Concerns
+
