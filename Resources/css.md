@@ -27,3 +27,4 @@ https://design.facebook.com/toolsandresources/
 
 Type Terms - https://www.supremo.co.uk/typeterms/
 
+icons - https://www.robbiepearce.com/softies
