@@ -1,10 +1,10 @@
 # General Resources
 
-# Opensource
+## Opensource
 
 GitHub guide - https://opensource.guide/ 
 
-# Git/GitHub
+## Git/GitHub
 
 Don't Fuck Up Cheatsheet - https://ohshitgit.com/
 GitHub Documentation - http://try.github.io/
@@ -31,7 +31,4 @@ GitHub Packages - https://github.com/features/packages
 
 Web Assembly at eBay - https://innovation.ebayinc.com/tech/engineering/webassembly-at-ebay-a-real-world-use-case/
 
-## Terms
-
-Separation of Concerns
-
+Alfred workflows - https://rknight.me/alfred-workflows/
