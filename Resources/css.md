@@ -1,4 +1,6 @@
-### CSS Resources
+# CSS
+
+## Knowledge
 
 CSS Handbook - https://www.freecodecamp.org/news/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11/
 
@@ -10,16 +12,18 @@ CSS Grid Cheat Sheet - https://grid.malven.co/
 
 Font common stats - https://www.cssfontstack.com/
 
-Cool CSS Effect - https://www.joshwcomeau.com/react/folding-the-dom/
-
-Transitions and Transformations for beginners
 
 Cascade Explained - https://2019.wattenberger.com/blog/css-cascade
+
+## CSS Examples
+
+Buttons - https://getcssscan.com/css-buttons-examples
+Cool CSS Effect - https://www.joshwcomeau.com/react/folding-the-dom/
+box-shadow examples
 
 ## Design 
 
 Collection of various Design resources - https://undesign.learn.uno/
-
 
 https://design.facebook.com/toolsandresources/
 

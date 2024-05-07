@@ -1,3 +1,7 @@
-# Git
+# Repos to look into
 
-https://msikma.github.io/pokesprite/overview/dex-gen7.html
+VS Code Settings https://github.com/CodingGarden/vscode-settings
+
+VS Code Settings - https://github.com/w3cj/vscode-settings
+
+Setup page https://github.com/CodingGarden/mac-setup

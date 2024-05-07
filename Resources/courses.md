@@ -21,7 +21,3 @@ https://www.sololearn.com/en/learn
 # Web Dev
 
 https://frontendmasters.com/
-
-# Swift 
-
-https://www.codecademy.com/learn/learn-swift?utm_source=customer_io&utm_campaign=learn_swift&utm_medium=email&utm_content=cta_button

@@ -1,26 +1,18 @@
 ## Portfolio Inspiration
 
-https://blog.cassidoo.co/post/open-standards-are-good/
+https://blog.cassidoo.co/post/open-standards-are-good/ - clean, Writer Mono font, easy to read, some color
 
 https://zachsim.one/
 
 https://bgorson.github.io/
 
-https://pierre.io/
+https://pierre.io/ - 3D animation
 
 https://mattfarley.ca/
 
-https://www.dejan.works/
+https://www.dejan.works/ - nice clean presentation of work
 
-https://caferati.me/
-
-https://benadam.me/
-
-https://www.danielfischer.com/
-
-http://stfj.net/index.html
-
-https://jorenrui.netlify.app/
+http://stfj.net/index.html - Zach Gage 
 
 https://daverupert.com/ - Dave Rupert (Shop Talk Podcast)
 
@@ -36,10 +28,14 @@ https://matteosantoro.dev/ - incredibly cool gameboy-style portfolio
 
 ## Projects/Webapps
 
-Apple collection - https://collection.leonardofaria.net/
+https://collection.leonardofaria.net/ - Apple collection
 
-honk - https://honkify.netlify.app/
+https://honkify.netlify.app/ - honk
 
-## Personal Design
+## Design
 
 https://dribbble.com/antalik
+
+https://bentogrids.com/ - Bento Grids
+
+https://component.gallery/ - Comonent gallery
