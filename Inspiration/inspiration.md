@@ -26,6 +26,8 @@ https://terrysutton.dev/
 
 https://matteosantoro.dev/ - incredibly cool gameboy-style portfolio
 
+https://sarajoy.dev/#gosara - neat card animation/structure
+
 ## Projects/Webapps
 
 https://collection.leonardofaria.net/ - Apple collection

@@ -12,6 +12,8 @@ CSS Grid Cheat Sheet - https://grid.malven.co/
 
 Cascade Explained - https://2019.wattenberger.com/blog/css-cascade
 
+Type Terms - https://www.supremo.co.uk/typeterms/
+
 ## CSS Examples
 
 Buttons - https://getcssscan.com/css-buttons-examples
@@ -26,10 +28,12 @@ https://design.facebook.com/toolsandresources/
 
 Color pallettes https://coolors.co/
 
-## Font
-
-Type Terms - https://www.supremo.co.uk/typeterms/
-
 icons - https://www.robbiepearce.com/softies
+
+
+
+## Fonts
+
+https://brailleinstitute.org/freefont
 
 Web safe fonts - https://www.cssfontstack.com/
