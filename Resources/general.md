@@ -42,3 +42,5 @@ Alfred workflows - https://rknight.me/alfred-workflows/
 
 https://github.com/CodingGarden/learn-to-code-resources
 
+https://caniuse.com/
+

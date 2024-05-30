@@ -1,4 +1,9 @@
 # CS and Webdev related blogs
 
-https://rknight.me
+https://flaviocopes.com/
+
+
+# Blogs I like
+
+https://rknight.me/blog
 
