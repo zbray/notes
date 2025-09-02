@@ -6,9 +6,9 @@
 
 ### Internet
 
-Git - 
+Git - a Version Control System that allows you to save multiple files in a project, document each change with a message and keep a record of all changes.
 
-GitHub - 
+GitHub - A platform where git projects (repositories) are showcased, saved, and documented.
 
 ### Coding Languages
 
