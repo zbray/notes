@@ -31,3 +31,21 @@ stack.search(); when you pass in an object in the stack as an argument it will r
 ## Queues
 Queues are a FIFO data structure - first in, first out - whichever object is added first, is the first object to leave. A collection designed for holding objects prior to processing
 
+concepts for queues involve enqueuing (add) and dequeueing(remove)
+
+insert explanation for why you can't call an object queue in Java
+
+offer() will enqueue (add) an object to the tail of our queue
+poll() will remove the head object
+peek() will examine and return the head object
+
+Since we're using Queue class there are some additional methods we can use methods inherited by the Collection class
+
+isEmpty(); will check if the queue is empty
+size(); will return size of queue
+contains(); will search for an return t/f if an object is in the queue - note: will not return position
+
+uses for queues:
+1. keyboard buffers - letters should appear in the order they were pressed, helpful with fast typing
+2. printer queue - print jobs should be completed in order
+3. LinkedLists, Priority Queues
