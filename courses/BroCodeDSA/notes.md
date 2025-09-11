@@ -49,3 +49,6 @@ uses for queues:
 1. keyboard buffers - letters should appear in the order they were pressed, helpful with fast typing
 2. printer queue - print jobs should be completed in order
 3. LinkedLists, Priority Queues
+
+## Priority Queues
+
