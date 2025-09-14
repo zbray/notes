@@ -52,3 +52,8 @@ uses for queues:
 
 ## Priority Queues
 
+FIFO data structure that serves elements with highest priorities first before elements with lower priority
+
+Queues are interfaces and we can't implement them directly, so we need to use a class that utilizes the Queue interface.
+
+Let's say we queue.offer a bunch of gpas that are not in any particular order. As a LinkedList, queue.poll will provide us the list that they were inserted in. PriorityQueue will provide them in an ordered list.
