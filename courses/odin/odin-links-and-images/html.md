@@ -8,6 +8,6 @@ Anchor tags require information including targets that will send the user to the
 
 Anchor tags can link to any kind of target on the internet - videos, pdf files, images, etc.
 
-<a href="https://www.theodinproject.com/about">About The Odin Project</a>
+<code><a href="https://www.theodinproject.com/about">About The Odin Project</a></code>
 
 Default behavior in most browsers is to open links in the same tab, this can be changed by adding the <code>target</code> attribute
