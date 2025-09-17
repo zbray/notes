@@ -57,3 +57,30 @@ FIFO data structure that serves elements with highest priorities first before el
 Queues are interfaces and we can't implement them directly, so we need to use a class that utilizes the Queue interface.
 
 Let's say we queue.offer a bunch of gpas that are not in any particular order. As a LinkedList, queue.poll will provide us the list that they were inserted in. PriorityQueue will provide them in an ordered list.
+
+## ArrayLists
+ArrayLists store elements in a contiguous memory location
+Arrays are great to searching but not great at inserting elements into positions already filled. in order to insert an element into position 3 of an array with 9 elements you'd need to shift the elements one by one to make room for the blank spot you need to create to insert the new element. Same issue with deleting, you'd need to delete the element, then shift all subsequent elements one position back to fill in the blank spaces left.
+
+## LinkedLists (singly, singly links to each node)
+
+A LinkedList is made up of a long chain of nodes, each node contains two parts:
+- some data we need to store
+- an address to the next node in line (aka a "pointer")
+
+LinkedLists do not have an index but each node contains an address to where the next node is located, each node knows where the next node resides. Think of this as a scavenger hunt or series of clues, with each entry leading to the next. You'll know you're at the tail when the address of the current node shows "null"
+
+To insert an element into a LinkedList you'll need to make sure the new node's address points to the next node, and replace the node immediately before the new node and have that address point to the new node  you're inserting.
+
+Similarly, to erase a node, just have the previous node point to the node after the node you want to erase.
+
+LinkedLists are bad at searching because there are no indexes.
+
+Searching through a LinkedList is 0(n) (linear time) because you have to search through each node until you reach the one you need. Searching through an array is constant (time to complete is the same regardless of size, searching for position 1 or searching for position 999 both take one operation)
+
+Another variation of this is a "doubly Linkedlist"
+
+## LinkedList (doubly)
+
+A doubly LinkedList requires even more memory to store two addresses for each node - one for the next node and one for the previous node. The benefit here is that we can traverse the list backwards and forwards.
+
