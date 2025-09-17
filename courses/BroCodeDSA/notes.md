@@ -56,7 +56,7 @@ FIFO data structure that serves elements with highest priorities first before el
 
 Queues are interfaces and we can't implement them directly, so we need to use a class that utilizes the Queue interface.
 
-Let's say we queue.offer a bunch of gpas that are not in any particular order. As a LinkedList, queue.poll will provide us the list that they were inserted in. PriorityQueue will provide them in an ordered list.
+Let's say we queue.offer a bunch of gaps that are not in any particular order. As a LinkedList, queue.poll will provide us the list that they were inserted in. PriorityQueue will provide them in an ordered list.
 
 ## ArrayLists
 ArrayLists store elements in a contiguous memory location
@@ -84,3 +84,27 @@ Another variation of this is a "doubly Linkedlist"
 
 A doubly LinkedList requires even more memory to store two addresses for each node - one for the next node and one for the previous node. The benefit here is that we can traverse the list backwards and forwards.
 
+LinkedLists are really good at the insertion and deletion of nodes.
+
+To add a node to a linkedList with the name `linkedList` you'd run the .add function and feed it the index position and the object being added:
+
+`linkedList.add([index position], [object being added]);
+
+To find the index position of a certain object we can use .`indexOf`:
+
+`System.out.println(linkedList.indexOf("F"));`
+
+advantages:
+1. Dynamic data structure (allocates needed memory while running)
+2. insertion and deletion of nodes is fast O(1)
+3. no/low memory
+
+disadvantages:
+1. greater memory usage (additional pointer)
+2. no random access of elements (no index [i])
+3. accessing/searching elements is more time consuiming 0(n)
+
+uses:
+1. implement stacks/queues
+2. gps navigation
+3. music playlists
