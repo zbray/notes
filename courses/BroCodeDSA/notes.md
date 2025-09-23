@@ -108,3 +108,14 @@ uses:
 1. implement stacks/queues
 2. gps navigation
 3. music playlists
+
+### Big O notation basics
+
+A common phrase is "how code slows as data grows"
+
+1. Descript the performance of an algorithm as the amount of data increases
+2. Machine independent but really hangs on the # of steps to completion
+3. Ignore smaller operations (0(n+1) can be considered 0(n))
+
+n = variable of amount of data
+
