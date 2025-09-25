@@ -12,7 +12,6 @@ An algorithm is a collection of steps to solve a problem
 
 example: linear search is a one by one examination of an array to find a value
 
-
 ## Stack data structure
 
 Stack is a LIFO data structure - last-in, first-out
@@ -29,6 +28,7 @@ stack.peek(); will return the value of the top most object in your stack
 stack.search(); when you pass in an object in the stack as an argument it will return the position in the stack of that object from the top - note: first object is "1" not zero - note: passing an object not in the stack will return "-1"
 
 ## Queues
+
 Queues are a FIFO data structure - first in, first out - whichever object is added first, is the first object to leave. A collection designed for holding objects prior to processing
 
 concepts for queues involve enqueuing (add) and dequeueing(remove)
@@ -46,6 +46,7 @@ size(); will return size of queue
 contains(); will search for an return t/f if an object is in the queue - note: will not return position
 
 uses for queues:
+
 1. keyboard buffers - letters should appear in the order they were pressed, helpful with fast typing
 2. printer queue - print jobs should be completed in order
 3. LinkedLists, Priority Queues
@@ -59,12 +60,14 @@ Queues are interfaces and we can't implement them directly, so we need to use a 
 Let's say we queue.offer a bunch of gaps that are not in any particular order. As a LinkedList, queue.poll will provide us the list that they were inserted in. PriorityQueue will provide them in an ordered list.
 
 ## ArrayLists
+
 ArrayLists store elements in a contiguous memory location
 Arrays are great to searching but not great at inserting elements into positions already filled. in order to insert an element into position 3 of an array with 9 elements you'd need to shift the elements one by one to make room for the blank spot you need to create to insert the new element. Same issue with deleting, you'd need to delete the element, then shift all subsequent elements one position back to fill in the blank spaces left.
 
 ## LinkedLists (singly, singly links to each node)
 
 A LinkedList is made up of a long chain of nodes, each node contains two parts:
+
 - some data we need to store
 - an address to the next node in line (aka a "pointer")
 
@@ -95,27 +98,59 @@ To find the index position of a certain object we can use .`indexOf`:
 `System.out.println(linkedList.indexOf("F"));`
 
 advantages:
+
 1. Dynamic data structure (allocates needed memory while running)
 2. insertion and deletion of nodes is fast O(1)
 3. no/low memory
 
 disadvantages:
+
 1. greater memory usage (additional pointer)
 2. no random access of elements (no index [i])
-3. accessing/searching elements is more time consuiming 0(n)
+3. accessing/searching elements is more time consuming 0(n)
 
 uses:
+
 1. implement stacks/queues
 2. gps navigation
 3. music playlists
+
+### Dynamic Arrays
+
+(AKA:
+Java - ArrayList
+C++ - Vector
+JavaScript - Array
+Python - List)
+An array with a resizable capacity - if we need extra room for elements we can increase capacity which we can't do with normal static arrays.
+
+Static arrays have a set capacity at compile time and cannot be changed (disadvantage)
+
+Ex: an array with a capacity of 6 and a size of 5, with the item in the 5 place being empty, null.
+
+Accessing elements is easy because they have index numbers. index elements can be accessed randomly in 0(1) because you begin at index 0. Searching takes time because you start at index 0 and move through the data set one by one 0(n) (linear time) inserting or deleting takes linear time unless done at the start or end of the array.
+
+Dynamic Arrays have their own internal static array with a fixed size. Once the inner static array reaches capacity the dynamic array will declare and instantiate a new array with an increased capacity. The amount by which the capacity will be increased depends by language.
+
+The capacity of Dynamic Arrays can be decreased as well.
+
+Advantages:
+
+1. Random access of elements in 0(1) - you can randomly access element by index number and retrieve value.
+2. Good locality of reference and data cache utilization - because all elements are next to each other
+3. Easy to insert and delete because you don't need to shift
+
+Disadvantages:
+
+1. wastes more memory
+2. shifting elements is time consuming 0(n)
 
 ### Big O notation basics
 
 A common phrase is "how code slows as data grows"
 
-1. Descript the performance of an algorithm as the amount of data increases
+1. Describes the performance of an algorithm as the amount of data increases
 2. Machine independent but really hangs on the # of steps to completion
 3. Ignore smaller operations (0(n+1) can be considered 0(n))
 
 n = variable of amount of data
-
