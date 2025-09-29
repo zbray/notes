@@ -72,7 +72,17 @@ There are three main contexts that operations and collections take place that de
 
 #### Unix : the collection is a text file amd the items are the lines in the file. each line is then broken out into values, separated by whitespace. the operations are unix processes and collections are composed by lining up one pipeline operator's output as the input for the next
 
+#### Object-oriented
+Collections are a collection class (list, array, set, etc) items in the collections become the objects within the collections (which can be or contain more collections)
+the operations are methods the collection classes are passed through (usually on a high level superclass)
 
+Question
+
+
+- What is a "high level superclass?"
+
+#### Functional languages
+as with OO languages the collections are collextions. unlike OO languages the items are 
 
 
 
