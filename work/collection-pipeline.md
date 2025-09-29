@@ -47,3 +47,49 @@ Martin then explains the structure of the code, and the difference in syntax bet
 
 
 Note: in OO languages, a function is merely a class with one method.
+
+
+Question
+
+- What is a lamba?
+
+## Defining Collection Pipeline
+
+Collection Pipeline is, to Martin, "a pattern of how we modularize and compose software,"
+
+> A collection pipeline lays out a sequence of operations that pass a collection of items between them. Each operation takes a collection as an input and emits another collection (except the last operation, which may be a terminal that emits a single value). The individual operations are simple, but you can create complex behavior by stringing together the various operations, much as you might plug pipes together in the physical world, hence the pipeline metaphor.
+
+Question 
+
+- What about this article impacts or informs your work or the work of the team/org?
+
+- Is this just a series of arguments used as gates to return a small amount or singular piece of data?
+
+Martin explains how he came to the term and how it is similar to the Pipes amd Filters pattern and also acklowedges a Collection Pipeline can be compared to "composing higher-order functions, where the functions all act on some form of sequence data structure"
+
+### Main Forms
+There are three main contexts that operations and collections take place that determine the form they take:
+
+#### Unix : the collection is a text file amd the items are the lines in the file. each line is then broken out into values, separated by whitespace. the operations are unix processes and collections are composed by lining up one pipeline operator's output as the input for the next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
