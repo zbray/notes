@@ -88,3 +88,4 @@ Question
 #### Functional languages
 
 as with OO languages the collections are collections. unlike OO languages the items are
+
