@@ -52,7 +52,7 @@ Note: in OO languages, a function is merely a class with one method.
 Question
 
 - What is a lambda?
-- A function without a name and whose body conisits of exactly one expression.
+- A function without a name and whose body consists of exactly one expression.
 
 ## Defining Collection Pipeline
 
