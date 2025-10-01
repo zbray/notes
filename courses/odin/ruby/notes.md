@@ -163,8 +163,8 @@ String interpolation allows you to evaluate a string that contains placeholder v
 Example:
 
 name = "Odin"
-puts "Hello, #{name}" #=> "Hello, Odin"
-puts 'Hello, #{name}' #=> "Hello, #{name}" 
+`puts "Hello, #{name}"` #=> "Hello, Odin"
+`puts 'Hello, #{name}'` #=> "Hello, #{name}" 
 
 #### String Methods
 
@@ -172,45 +172,45 @@ strings come with loads of methods, see the [Ruby Docs](https://docs.ruby-lang.o
 
 capitalize
 
-"hello".capitalize #=> "Hello"
+`"hello".capitalize` #=> "Hello"
 
 include
 
-"hello".include?("lo") #=> true
+`"hello".include?("lo")` #=> true
 
 upcase
 
-"hello.upcase #=> "HELLO"
+`"hello".upcase` #=> "HELLO"
 
 downcase
 
-"Hello".downcase #=> "hello"
+`"Hello".downcase` #=> "hello"
 
 empty?
 
-"hello.empty? #=> false
-"".empty? #=> true
+`"hello".empty?` #=> false
+`"".empty?` #=> true
 
 length
-"hello".length #=> 5
+`"hello".length` #=> 5
 
 reverse
-"hello".reverse #=> "olleh"
+`"hello".reverse` #=> "olleh"
 
 split
-"hello world".split #=> ["hello", "world"]
-"hello".split("") #=> ["h", "e", "l", "l", "o"]
+`"hello world".split` #=> ["hello", "world"]
+`"hello".split("")` #=> ["h", "e", "l", "l", "o"]
 
 strip
-" hello, world      ".strip #=> "hello, world"
+`" hello, world      ".strip` #=> "hello, world"
 
 #### Converting other objects to strings
 
-5.to_s #=> "5"
+`5.to_s` #=> "5"
 
-nil.to_s #=> ""
+`nil.to_s` #=> ""
 
-:symbol.to_s #=> "symbol"
+`:symbol.to_s` #=> "symbol"
 
 ### Symbols
 
@@ -231,7 +231,7 @@ Nil - Nil means "nothing." everything in Ruby has a return value, when a piece o
 ## Reading
 
 - [Basics chapter of LaunchSchool's _Intro to Programming With Ruby_](https://launchschool.com/books/ruby/read/basics)
-- Alex Chaffee's (Objects write up)[https://codelikethis.com/lessons/learn-to-code/objects]
+- Alex Chaffee's [Objects write up](https://codelikethis.com/lessons/learn-to-code/objects)
 
 ## Homework
 
