@@ -54,13 +54,13 @@ Division
 
 Exponent
 
-`2 ** 2 #=> 4`
-`3 ** 4 #=> 81`
+```2 ** 2 #=> 4`
+`3 ** 4 #=> 81```
 
 Modulus
 
-`8 % 2 #=> 0`
-`10 % 4 #=> 2`
+```8 % 2 #=> 0`
+`10 % 4 #=> 2```
 
 #### Integers and floats
 
@@ -77,8 +77,8 @@ Integer to float
 `13.to_f` #=> 13.0
 
 float to integer
-`13.0.to_f` #=> 13
-`13.9.to_f` #=> 13
+```13.0.to_f` #=> 13
+`13.9.to_f` #=> 13``
 
 note: Ruby does not round, when converting a float to an integer, the decimals are simply cut off.
 
@@ -86,15 +86,15 @@ other number methods:
 
 check for even
 
-`6.even?` #=> true
+```6.even?` #=> true
 
-`7.even?` #=> false
+`7.even?` #=> false```
 
 check for odd
 
-`6.odd?` #=> false
+```6.odd?` #=> false
 
-`7.odd?` #=> true
+`7.odd?` #=> true```
 
 ### Strings
 
@@ -105,12 +105,15 @@ Strings can be formed with either double `""` or single `''` quotation marks, al
 There are multiple ways to concatenate strings
 
 Plus operator
+
 `"This " + "has been " + "concatenated"` #=> "This has been concatenated"
  
 Shovel operator
+
 `"This " << "has been " <<  "concatenated"` #=> "This has been concatenated"
 
 Concat method
+
 `"This ".concat("has been ").concat("concatenated")` #=> "This has been concatenated"
 
 
@@ -121,12 +124,12 @@ You can access strings inside strings
 integer slice
 "When a non-negative integer argument index is given, the slice is the 1-character substring found in self at character offset index:" (ruby documentation)
 
-`"hello"[0]` #=> "h"
-`"hello"[2]` #=> "l"
+```"hello"[0]` #=> "h"
+`"hello"[2]` #=> "l"```
 
 "When a Range argument range is given, it creates a substring of string using the indices in range."
-"hello"[0,2] #=> "hel"
-"hello"[0,1] #=> "he"
+```"hello"[0,2] #=> "hel"
+"hello"[0,1] #=> "he"```
 
 #### Escape characters
 Escape characters allow you to type in represenations of whitespace characters and include quotation marks in your string without accidentally ending it. Note - for double quotation marks only
