@@ -36,7 +36,7 @@ REPL stands for Read-Eval-Print-Loop. It's a program that allows you type Ruby c
 
 Ruby has all the typical math operators you would expect:
 
-Addition 
+Addition
 
 `1 + 1 #=> 2`
 
@@ -55,18 +55,20 @@ Division
 Exponent
 
 ```2 ** 2 #=> 4`
+
 `3 ** 4 #=> 81```
 
 Modulus
 
 ```8 % 2 #=> 0`
+
 `10 % 4 #=> 2```
 
 #### Integers and floats
 
 The two main number types in Ruby are integers (whole numbers) and floats (numbers that contain decimal points)
 
-When doing arithmetic with two integers in Ruby the resule will always be an integer.
+When doing arithmetic with two integers in Ruby the result will always be an integer.
 
 To get a float as a result you must use a float in the equation.
 
@@ -77,8 +79,9 @@ Integer to float
 `13.to_f` #=> 13.0
 
 float to integer
-```13.0.to_f` #=> 13
-`13.9.to_f` #=> 13``
+`13.0.to_f` #=> 13
+
+`13.9.to_f` #=> 13`
 
 note: Ruby does not round, when converting a float to an integer, the decimals are simply cut off.
 
@@ -86,15 +89,15 @@ other number methods:
 
 check for even
 
-```6.even?` #=> true
+`6.even?` #=> true
 
-`7.even?` #=> false```
+`7.even?` #=> false
 
 check for odd
 
-```6.odd?` #=> false
+`6.odd?` #=> false
 
-`7.odd?` #=> true```
+`7.odd?` #=> true
 
 ### Strings
 
@@ -107,7 +110,7 @@ There are multiple ways to concatenate strings
 Plus operator
 
 `"This " + "has been " + "concatenated"` #=> "This has been concatenated"
- 
+
 Shovel operator
 
 `"This " << "has been " <<  "concatenated"` #=> "This has been concatenated"
@@ -116,7 +119,6 @@ Concat method
 
 `"This ".concat("has been ").concat("concatenated")` #=> "This has been concatenated"
 
-
 #### String slices (substrings)
 
 You can access strings inside strings
@@ -124,18 +126,27 @@ You can access strings inside strings
 integer slice
 "When a non-negative integer argument index is given, the slice is the 1-character substring found in self at character offset index:" (ruby documentation)
 
-```"hello"[0]` #=> "h"
-`"hello"[2]` #=> "l"```
+`"hello"[0]` #=> "h"
+
+`"hello"[2]` #=> "l"`
 
 "When a Range argument range is given, it creates a substring of string using the indices in range."
-```"hello"[0,2] #=> "hel"
-"hello"[0,1] #=> "he"```
+`"hello"[0,2]` #=> "hel"
+`"hello"[0,1]` #=> "he"
 
 #### Escape characters
-Escape characters allow you to type in represenations of whitespace characters and include quotation marks in your string without accidentally ending it. Note - for double quotation marks only
+
+Escape characters allow you to insert whitespace characters inside a  string that includes double quotation marks without accidentally ending the string
 
 Ex:
 
+`"Hello \n\n Hello"` will return
+
+"Hello
+
+Hello"
+
+More escape characters:
 
 ```\\  #=> Need a backslash in your string?
 \b  #=> Backspace
@@ -145,3 +156,62 @@ Ex:
 \t  #=> Tab
 \"  #=> Double quotation mark
 \'  #=> Single quotation mark```
+
+#### Interpolation
+
+String interpolation allows you to evaluate a string that contains placeholder variables. Very common, used a lot
+
+Example:
+
+```name = "Odin"
+
+puts "Hello, #{name}" #=> "Hello, Odin"
+puts 'Hello, #{name}' #=> "Hello, #{name}"``` 
+
+#### String Methods
+
+strings come with loads of methods, see the (Ruby Docs)[https://docs.ruby-lang.org/en/3.4/String.html] for more about them
+
+capitalize
+
+"hello".capitalize #=> "Hello"
+
+include
+
+"hello".include?("lo") #=> true
+
+upcase
+
+"hello.upcase #=> "HELLO"
+
+downcase
+
+"Hello".downcase #=> "hello"
+
+empty?
+
+"hello.empty? #=> false
+"".empty? #=> true
+
+length
+"hello".length #=> 5
+
+reverse
+"hello".reverse #=> "olleh"
+
+split
+"hello world".split #=> ["hello", "world"]
+"hello".split("") #=> ["h", "e", "l", "l", "o"]
+
+strip
+" hello, world      ".strip #=> "hello, world"
+
+#### Converting other objects to strings
+
+5.to_s #=> "5"
+
+nil.to_s #=> ""
+
+:symbol.to_s #=> "symbol"
+
+### Symbols
