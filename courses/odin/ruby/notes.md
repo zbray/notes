@@ -112,3 +112,31 @@ Concat method
 `"This ".concat("has been ").concat("concatenated")` #=> "This has been concatenated"
 
 
+#### String slices (substrings)
+
+You can access strings inside strings
+
+integer slice
+"When a non-negative integer argument index is given, the slice is the 1-character substring found in self at character offset index:" (ruby documentation)
+
+`"hello"[0]` #=> "h"
+`"hello"[2]` #=> "l"
+
+"When a Range argument range is given, it creates a substring of string using the indices in range."
+"hello"[0,2] #=> "hel"
+"hello"[0,1] #=> "he"
+
+#### Escape characters
+Escape characters allow you to type in represenations of whitespace characters and include quotation marks in your string without accidentally ending it. Note - for double quotation marks only
+
+Ex:
+
+
+```\\  #=> Need a backslash in your string?
+\b  #=> Backspace
+\r  #=> Carriage return
+\n  #=> Newline - common
+\s  #=> Space
+\t  #=> Tab
+\"  #=> Double quotation mark
+\'  #=> Single quotation mark```
