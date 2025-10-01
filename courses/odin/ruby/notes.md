@@ -87,12 +87,14 @@ other number methods:
 check for even
 
 `6.even?` #=> true
+
 `7.even?` #=> false
 
 check for odd
 
 `6.odd?` #=> false
-`7.odd?` #=>
+
+`7.odd?` #=> true
 
 ### Strings
 
