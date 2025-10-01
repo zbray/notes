@@ -162,14 +162,13 @@ String interpolation allows you to evaluate a string that contains placeholder v
 
 Example:
 
-```name = "Odin"
-
+name = "Odin"
 puts "Hello, #{name}" #=> "Hello, Odin"
-puts 'Hello, #{name}' #=> "Hello, #{name}"``` 
+puts 'Hello, #{name}' #=> "Hello, #{name}" 
 
 #### String Methods
 
-strings come with loads of methods, see the (Ruby Docs)[https://docs.ruby-lang.org/en/3.4/String.html] for more about them
+strings come with loads of methods, see the [Ruby Docs](https://docs.ruby-lang.org/en/3.4/String.html) for more about them
 
 capitalize
 
@@ -214,3 +213,37 @@ nil.to_s #=> ""
 :symbol.to_s #=> "symbol"
 
 ### Symbols
+
+Strings can be changed so everytime a string is used Ruby has to store it in memory. Symbols are stored in memory only once.
+
+One common use for symbols over strings are the keys in hashes.
+
+To create a symbol, put a colon at the beginning of some text
+
+:my_symbol
+
+### Booleans
+
+True and false - means what it says on the tin
+
+Nil - Nil means "nothing." everything in Ruby has a return value, when a piece of code doesn't have anything to return it will return nil.
+
+## Reading
+
+- [Basics chapter of LaunchSchool's _Intro to Programming With Ruby_](https://launchschool.com/books/ruby/read/basics)
+- Alex Chaffee's (Objects write up)[https://codelikethis.com/lessons/learn-to-code/objects]
+
+## Homework
+
+- Follow the cloning and installation instructions in the main README of our ruby-exercise repo to set up the exercises.
+- Then, follow the usage instructions in the ruby-basics README to complete the exercises in the 1_data_types folder.
+- After completing the exercises, check out the solutions branch on GitHub to compare solutions.
+
+### Additional Resources
+
+- [The Bastards Book of Ruby’s “Numbers” chapter](http://ruby.bastardsbook.com/chapters/numbers/)
+- [The Bastards Book of Ruby’s “Strings” chapter](http://ruby.bastardsbook.com/chapters/strings/)
+- [Ruby Monstas “Numbers” section](http://ruby-for-beginners.rubymonstas.org/built_in_classes/numbers.html)
+- [Ruby Monstas “Strings” section](http://ruby-for-beginners.rubymonstas.org/built_in_classes/strings.html)
+- [Ruby Monstas “Symbols” section](http://ruby-for-beginners.rubymonstas.org/built_in_classes/symbols.html)
+- [Ruby Monstas “True, False, and Nil” section](http://ruby-for-beginners.rubymonstas.org/built_in_classes/true_false_nil.html)
