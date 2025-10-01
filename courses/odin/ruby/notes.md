@@ -147,15 +147,14 @@ Ex:
 Hello"
 
 More escape characters:
-
-```\\  #=> Need a backslash in your string?
-\b  #=> Backspace
-\r  #=> Carriage return
-\n  #=> Newline - common
-\s  #=> Space
-\t  #=> Tab
-\"  #=> Double quotation mark
-\'  #=> Single quotation mark```
+\ Need a backslash in your string?
+b  #=> Backspace
+r  #=> Carriage return
+n  #=> Newline - common
+s  #=> Space
+t  #=> Tab
+"  #=> Double quotation mark
+'  #=> Single quotation mark
 
 #### Interpolation
 
