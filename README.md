@@ -1,3 +1,2 @@
 # Notes
-
 Notes, Inspiration, Resources
