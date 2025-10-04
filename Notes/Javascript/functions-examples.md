@@ -11,7 +11,6 @@ function even_or_odd(number) {
   }
 ```
 
-
 Write a function that returns a string with all the vowels removed
 
 ```js
@@ -19,7 +18,6 @@ function  disemvowel(str) {
   Return str.replace(/[aeiou]/gi, ‘’);
 }
 ```
-
 
 Abbreviate a Two Word Name
 

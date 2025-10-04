@@ -3,6 +3,7 @@
 From "Ruby in 100 Seconds" by Fireship
 
 Benefits of Ruby:
+
 - reduced complexity required to build a full stack web application
 - minimal syntax using plain english words
 - use of blocks to write concise functional code
@@ -13,17 +14,17 @@ Everything is an object
 
 Every object can be modified
 
-This gives developers the flexibility to extend or modify the behaivor of the underlying language
+This gives developers the flexibility to extend or modify the behavior of the underlying language
 
-Developer ecosystem is large and mature, developers share code with Ruby Gems Package Manager. A program is organized into a self-contained format called a gem. 
+Developer ecosystem is large and mature, developers share code with Ruby Gems Package Manager. A program is organized into a self-contained format called a gem.
 
-### Coding
+## Coding
 
 to declare a local variable give it a name followed by a value
 
 `hello = "hi mom"`
 
-There is no variable keyword but you can define constants in all caps 
+There is no variable keyword but you can define constants in all caps
 
 `HELLO = "hi mom"`
 
@@ -47,11 +48,11 @@ puts hello`
 
 we can define our own custom methods using the def keyword which end with the end keyword.
 
-Every method will always return exactly one object 
+Every method will always return exactly one object
 
-No return keyword is necessary 
+No return keyword is necessary
 
-if you don't want a named method you can create a block with the do keyword which works like an anonymous function 
+if you don't want a named method you can create a block with the do keyword which works like an anonymous function
 
 `3.times do
   "Ruby is awesome"
@@ -81,5 +82,4 @@ you can add getters and setters to a class using the attribute accessor method
 
 `attr_accessor :face
 
-now we can create a new object instance by calling the new method on the class 
-
+now we can create a new object instance by calling the new method on the class

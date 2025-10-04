@@ -164,7 +164,7 @@ Example:
 
 name = "Odin"
 `puts "Hello, #{name}"` #=> "Hello, Odin"
-`puts 'Hello, #{name}'` #=> "Hello, #{name}" 
+`puts 'Hello, #{name}'` #=> "Hello, #{name}"
 
 #### String Methods
 
@@ -198,8 +198,8 @@ reverse
 `"hello".reverse` #=> "olleh"
 
 split
-`"hello world".split` #=> ["hello", "world"]
-`"hello".split("")` #=> ["h", "e", "l", "l", "o"]
+`"hello world".split` #=> `["hello", "world"]`
+`"hello".split("")` #=> `["h", "e", "l", "l", "o"]`
 
 strip
 `" hello, world      ".strip` #=> "hello, world"
@@ -214,7 +214,7 @@ strip
 
 ### Symbols
 
-Strings can be changed so everytime a string is used Ruby has to store it in memory. Symbols are stored in memory only once.
+Strings can be changed so every time a string is used Ruby has to store it in memory. Symbols are stored in memory only once.
 
 One common use for symbols over strings are the keys in hashes.
 

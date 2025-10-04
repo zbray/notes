@@ -1,4 +1,4 @@
-## Goals
+# Goals
 
 - Learn HTML
 - Learn CSS
@@ -7,6 +7,7 @@
 - Learn React
 
 Roadmap
+
 - HTML tutorials
 - CSS tutorial
 - Build HTML/CSS website
@@ -16,9 +17,8 @@ Roadmap
 - React Tutorial
 - React Web App
 
-
-
 CSS Things to Learn
+
 - Box model
 - positioning
 - Animations

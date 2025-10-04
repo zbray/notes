@@ -91,7 +91,7 @@ LinkedLists are really good at the insertion and deletion of nodes.
 
 To add a node to a linkedList with the name `linkedList` you'd run the .add function and feed it the index position and the object being added:
 
-`linkedList.add([index position], [object being added]);
+`linkedList.add([index position], [object being added]);`
 
 To find the index position of a certain object we can use .`indexOf`:
 

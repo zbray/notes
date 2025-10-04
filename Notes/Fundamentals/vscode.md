@@ -11,4 +11,3 @@
 - cmd + p will Go To File (ctrl on win/lin)
 
 - cmd + shift + o (ctrl + shift + o on win/lin)
-

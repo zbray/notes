@@ -2,47 +2,47 @@
 
 ## Opensource
 
-GitHub guide - https://opensource.guide/ 
+GitHub guide - <https://opensource.guide/>
 
 ## Git/GitHub
 
-Don't Fuck Up Cheatsheet - https://ohshitgit.com/
+Don't Fuck Up Cheatsheet - <https://ohshitgit.com/>
 
-GitHub Documentation - http://try.github.io/
+GitHub Documentation - <http://try.github.io/>
 
-Great Git Guide - http://gitimmersion.com/index.htm
+Great Git Guide - <http://gitimmersion.com/index.htm>
 
-Another great Git guide - https://learngitbranching.js.org/
+Another great Git guide - <https://learngitbranching.js.org/>
 
 ## Browser
 
-Compatibility check - https://caniuse.com/
+Compatibility check - <https://caniuse.com/>
 
-## Misc 
+## Misc
 
-Online IDE with libraries and packages - https://repl.it
+Online IDE with libraries and packages - <https://repl.it>
 
-Unminify, unpack, deobfuscate code - https://unminify.com/
+Unminify, unpack, deobfuscate code - <https://unminify.com/>
 
-Lorem Ipsum for photos - https://picsum.photos/
+Lorem Ipsum for photos - <https://picsum.photos/>
 
-GitHub Packages - https://github.com/features/packages
+GitHub Packages - <https://github.com/features/packages>
 
 ## Images
 
-Creative Commons image search - https://search.creativecommons.org/
+Creative Commons image search - <https://search.creativecommons.org/>
 
-Compress Images - https://compressor.io/
+Compress Images - <https://compressor.io/>
 
 ## Mac / PC
 
-Alfred workflows - https://rknight.me/alfred-workflows/
+Alfred workflows - <https://rknight.me/alfred-workflows/>
 
 ## Resources
 
-https://github.com/CodingGarden/learn-to-code-resources
+<https://github.com/CodingGarden/learn-to-code-resources>
 
-https://caniuse.com/
+<https://caniuse.com/>
 
 [Gitignore.io](https://www.toptal.com/developers/gitignore)
 
@@ -64,4 +64,4 @@ LeetCode
 
 ## Personal Blogs
 
-https://www.samanthaming.com/
+<https://www.samanthaming.com/>

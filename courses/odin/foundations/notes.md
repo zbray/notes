@@ -1,6 +1,6 @@
-Goals to Keep in mind:
+# Goals to Keep in mind
 
-Proficiency in Programming Languages 
+Proficiency in Programming Languages
 HTML, CSS, JavaScript
 PHP
 Python
@@ -17,4 +17,3 @@ Soft Skills:
 Problem-solving, communication, attention to detail, time management
 Professional Qualities:
 Adaptability, Portfolio of work, client-focused, work ethic, reliability, teamwork, collaboration
-

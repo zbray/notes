@@ -1,23 +1,24 @@
 # Courses
 
-AWS Path - https://www.freecodecamp.org/news/awscertified-challenge-free-path-aws-cloud-certifications/
+AWS Path - <https://www.freecodecamp.org/news/awscertified-challenge-free-path-aws-cloud-certifications/>
 
-https://codecademy.com/
+<https://codecademy.com/>
 
-# MooG
+## MooG
 
-https://classcentral.com
-https://coursera.org/
-https://udemy.com/
-https://pluralsight.com/
+<https://classcentral.com>
+<https://coursera.org/>
+<https://udemy.com/>
+<https://pluralsight.com/>
 
-# DOM 
-Library allows to react to viewport events - https://tornis.robbowen.digital/
+## DOM
 
-# CompSci
+Library allows to react to viewport events - <https://tornis.robbowen.digital/>
 
-https://www.sololearn.com/en/learn
+## CompSci
 
-# Web Dev
+<https://www.sololearn.com/en/learn>
 
-https://frontendmasters.com/
+## Web Dev
+
+<https://frontendmasters.com/>

@@ -1,16 +1,16 @@
-## Terms
+# Terms
 
-### Computer Science
+## Computer Science
 
-### WWW
+## WWW
 
-### Internet
+## Internet
 
 Git - a Version Control System that allows you to save multiple files in a project, document each change with a message and keep a record of all changes.
 
 GitHub - A platform where git projects (repositories) are showcased, saved, and documented.
 
-### Coding Languages
+## Coding Languages
 
 HTML - Hypertext Markup Language
 
@@ -18,66 +18,65 @@ The skeleton of the web page that gives it structure
 
 CSS - Cascading Style Sheet, the language used to style html documents
 
-JavaScript - 
+JavaScript -
 
-
-Python - 
+Python -
 
 Ruby
 
-PHP - 
+PHP -
 
-Rust - 
+Rust -
 
 Go (Golang)
 
-.NET (dotnet) - 
+.NET (dotnet) -
 
-Rails - 
+Rails -
 
-SQL - 
+SQL -
 
-MongoDB - 
+MongoDB -
 
-Wordpress - 
+Wordpress -
 
-C - 
+C -
 
-Bash - 
+Bash -
 
-Kotlin - 
+Kotlin -
 
-### HTML Frameworks
+## HTML Frameworks
 
-Bootstrap - 
+Bootstrap -
 
-Sass - 
+Sass -
 
-### JS Frameworks
+## JS Frameworks
 
-Angular - 
+Angular -
 
-Vue - 
+Vue -
 
-Backbone.js - 
+Backbone.js -
 
-Ember - 
+Ember -
 
 React -
 
-React Redux - 
+React Redux -
 
-React Native - 
+React Native -
 
-React Router 
+React Router
 
-API - 
+API -
 
-GraphQL - 
+GraphQL -
 
-Kubernetes - 
+Kubernetes -
 
-Django - 
+Django -
 
 Agile
 
@@ -85,7 +84,7 @@ Scrum
 
 Webpack
 
-Open sournce
+Open source
 
 Testing
 
@@ -95,7 +94,7 @@ Machine Learning
 
 Gatsby
 
-Githunt
+Githunt - Trending git repos
 
 NPM
 
@@ -139,4 +138,3 @@ Ubuntu
 Postgres
 
 a11y
-

@@ -1,3 +1,3 @@
-# Python 
+# Python
 
-Learn Python - https://devdocs.io/javascript/
+Learn Python - <https://devdocs.io/javascript/>

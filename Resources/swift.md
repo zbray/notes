@@ -1,4 +1,3 @@
 # Swift
 
-Apple Tutorials - https://developer.apple.com/tutorials/develop-in-swift/
-
+Apple Tutorials - <https://developer.apple.com/tutorials/develop-in-swift/>

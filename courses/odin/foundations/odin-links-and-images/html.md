@@ -18,7 +18,8 @@ noreferrer = instructs browser to omit `Referer` header and leak no referrer inf
 
 `target="blank"` = instructs the browser to open the link in a new tab
 
-#### Absolute vs Relative links
+## Absolute vs Relative links
+
 Absolute links link to pages on other websites and are structured as follows:
 `scheme://domain/path`
 example: `"https://www.theodinproject.com/about"`
