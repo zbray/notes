@@ -1,3 +1,3 @@
-# Resources
+# Notes
 
-Notes and resources
+Notes, Inspiration, Resources
