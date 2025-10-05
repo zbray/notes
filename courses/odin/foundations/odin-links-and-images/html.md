@@ -13,7 +13,7 @@ Anchor tags can link to any kind of target on the internet - videos, pdf files, 
 Default behavior in most browsers is to open links in the same tab, this can be changed by adding the `target` attribute
 
 the `rel` attributes can be added to the anchor tag with the following values for added privacy and security
-`noopener` = instructs browser to navigate to target without granting the new browsing context access to the page that opened it (specifcally does not set `Window.opener` property on opened window)
+`noopener` = instructs browser to navigate to target without granting the new browsing context access to the page that opened it (specifically does not set `Window.opener` property on opened window)
 noreferrer = instructs browser to omit `Referer` header and leak no referrer information and act as though `noopener` keyword were also specified. No information about source will carrythrough to target link.
 
 `target="blank"` = instructs the browser to open the link in a new tab
