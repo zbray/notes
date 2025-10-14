@@ -1,6 +1,6 @@
 # Data Structures and Algorithms Notes
 
-[link](source: https://www.youtube.com/watch?v=CBYHwZcbD-s)
+[link](source: <https://www.youtube.com/watch?v=CBYHwZcbD-s>)
 
 ## Basic Data Structures
 
@@ -108,7 +108,7 @@ advantages:
 disadvantages:
 
 1. greater memory usage (additional pointer)
-2. no random access of elements (no index [i])
+2. no random access of elements (no index \[i\])
 3. accessing/searching elements is more time consuming 0(n)
 
 uses:

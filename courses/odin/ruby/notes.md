@@ -254,7 +254,7 @@ Nil - Nil means "nothing." everything in Ruby has a return value, when a piece o
 
 To Create an array we use brackets
 
-ex: 
+ex:
 
 `[1, 2, 3, 4, 5]`
 
@@ -285,4 +285,4 @@ end```
 `3.times` tells ruby to run this block 3 times
 `do |i| .. end` defines the block 
 `i` is the looper counter starting at 0
-So every time it runs 
+So every time it runs it iterates on the integer 0 and outputs a number.
