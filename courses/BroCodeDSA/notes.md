@@ -1,5 +1,7 @@
 # Data Structures and Algorithms Notes
 
+[link](source: https://www.youtube.com/watch?v=CBYHwZcbD-s)
+
 ## Basic Data Structures
 
 A data structure is a named location that can be used to store and organize data
