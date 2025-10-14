@@ -247,3 +247,42 @@ Nil - Nil means "nothing." everything in Ruby has a return value, when a piece o
 - [Ruby Monstas “Strings” section](http://ruby-for-beginners.rubymonstas.org/built_in_classes/strings.html)
 - [Ruby Monstas “Symbols” section](http://ruby-for-beginners.rubymonstas.org/built_in_classes/symbols.html)
 - [Ruby Monstas “True, False, and Nil” section](http://ruby-for-beginners.rubymonstas.org/built_in_classes/true_false_nil.html)
+
+### Quick Notes
+
+`puts` and `print` both output text but `puts` adds a newline after the output and `print` keeps the cursor on the same line
+
+To Create an array we use brackets
+
+ex: 
+
+`[1, 2, 3, 4, 5]`
+
+`gets.chomp` is used to get user imput.
+`gets` reads a line from the keyboard, including the newline at the end
+`chomp` removes that newline.
+
+It's how to safely get user input without an extra blank line
+
+ex:
+
+```print "What's your name? "
+name = gets.chomp
+puts "Hello, #{name}!"```
+
+A has is like a dictionary, it stores key/value pairs
+
+ex:
+```person = { name: "Ruby", age: 40 }
+puts person[:name] #=> "Ruby"```
+
+#### Run this block times explainer
+
+```3.times do |i|
+  puts i
+end```
+
+`3.times` tells ruby to run this block 3 times
+`do |i| .. end` defines the block 
+`i` is the looper counter starting at 0
+So every time it runs 
