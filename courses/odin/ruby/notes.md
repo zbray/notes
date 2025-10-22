@@ -54,15 +54,15 @@ Division
 
 Exponent
 
-```2 ** 2 #=> 4`
+`2 ** 2 #=> 4
 
-`3 ** 4 #=> 81```
+3 ** 4 #=> 81`
 
 Modulus
 
-```8 % 2 #=> 0`
+`8 % 2 #=> 0
 
-`10 % 4 #=> 2```
+10 % 4 #=> 2`
 
 #### Integers and floats
 
@@ -79,9 +79,9 @@ Integer to float
 `13.to_f` #=> 13.0
 
 float to integer
-`13.0.to_f` #=> 13
+`13.0.to_i` #=> 13
 
-`13.9.to_f` #=> 13`
+`13.9.to_i` #=> 13`
 
 note: Ruby does not round, when converting a float to an integer, the decimals are simply cut off.
 
@@ -126,13 +126,20 @@ You can access strings inside strings
 integer slice
 "When a non-negative integer argument index is given, the slice is the 1-character substring found in self at character offset index:" (ruby documentation)
 
-`"hello"[0]` #=> "h"
+`"hello"[0]` #=> "h"`
 
 `"hello"[2]` #=> "l"`
 
 "When a Range argument range is given, it creates a substring of string using the indices in range."
-`"hello"[0,2]` #=> "hel"
-`"hello"[0,1]` #=> "he"
+
+The first argument gives the starting index, the second argument gives the number of characters
+
+e.g. `"hello"[0,2]` returns "he" because it starts at index 0 and takes 2 characters.
+
+`[0, 2]` would mean "start at index 0, take 2 characters"
+
+`"hello"[0,2]` #=> "he"
+`"hello"[0,1]` #=> "h"
 
 #### Escape characters
 
@@ -147,14 +154,15 @@ Ex:
 Hello"
 
 More escape characters:
-\ Need a backslash in your string?
-b  #=> Backspace
-r  #=> Carriage return
-n  #=> Newline - common
-s  #=> Space
-t  #=> Tab
-"  #=> Double quotation mark
-'  #=> Single quotation mark
+
+```\ Need a backslash in your string?
+\b  #=> Backspace
+\r  #=> Carriage return
+\n  #=> Newline - common
+\s  #=> Space
+\t  #=> Tab
+\"  #=> Double quotation mark
+\'  #=> Single quotation mark```
 
 #### Interpolation
 
@@ -214,7 +222,7 @@ strip
 
 ### Symbols
 
-Strings can be changed so every time a string is used Ruby has to store it in memory. Symbols are stored in memory only once.
+Strings are mutable and each string literal is stored separately in memory. Symbols, by contrast, are immutable and stored only once — which saves memory.
 
 One common use for symbols over strings are the keys in hashes.
 
@@ -258,7 +266,7 @@ ex:
 
 `[1, 2, 3, 4, 5]`
 
-`gets.chomp` is used to get user imput.
+`gets.chomp` is used to get user input.
 `gets` reads a line from the keyboard, including the newline at the end
 `chomp` removes that newline.
 
@@ -267,12 +275,15 @@ It's how to safely get user input without an extra blank line
 ex:
 
 ```print "What's your name? "
+
 name = gets.chomp
+
 puts "Hello, #{name}!"```
 
-A has is like a dictionary, it stores key/value pairs
+A hash is like a dictionary, it stores key/value pairs
 
 ex:
+
 ```person = { name: "Ruby", age: 40 }
 puts person[:name] #=> "Ruby"```
 
@@ -285,4 +296,5 @@ end```
 `3.times` tells ruby to run this block 3 times
 `do |i| .. end` defines the block 
 `i` is the looper counter starting at 0
-So every time it runs it iterates on the integer 0 and outputs a number.
+
+So it runs 3 times with i being 0, then 1, then 2
