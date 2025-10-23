@@ -54,15 +54,15 @@ Division
 
 Exponent
 
-`2 ** 2 #=> 4
+`2 ** 2 #=> 4`
 
-3 ** 4 #=> 81`
+`3 ** 4 #=> 81`
 
 Modulus
 
-`8 % 2 #=> 0
+`8 % 2 #=> 0`
 
-10 % 4 #=> 2`
+`10 % 4 #=> 2`
 
 #### Integers and floats
 
@@ -76,12 +76,13 @@ You can also convert between the two:
 
 Integer to float
 
-`13.to_f` #=> 13.0
+`13.to_f #=> 13.0`
 
 float to integer
-`13.0.to_i` #=> 13
 
-`13.9.to_i` #=> 13`
+`13.0.to_i #=> 13`
+
+`13.9.to_i #=> 13`
 
 note: Ruby does not round, when converting a float to an integer, the decimals are simply cut off.
 
@@ -89,15 +90,15 @@ other number methods:
 
 check for even
 
-`6.even?` #=> true
+`6.even? #=> true`
 
-`7.even?` #=> false
+`7.even? #=> false`
 
 check for odd
 
-`6.odd?` #=> false
+`6.odd? #=> false`
 
-`7.odd?` #=> true
+`7.odd? #=> true`
 
 ### Strings
 
@@ -109,15 +110,15 @@ There are multiple ways to concatenate strings
 
 Plus operator
 
-`"This " + "has been " + "concatenated"` #=> "This has been concatenated"
+`"This " + "has been " + "concatenated" #=> "This has been concatenated"`
 
 Shovel operator
 
-`"This " << "has been " <<  "concatenated"` #=> "This has been concatenated"
+`"This " << "has been " <<  "concatenated" #=> "This has been concatenated"`
 
 Concat method
 
-`"This ".concat("has been ").concat("concatenated")` #=> "This has been concatenated"
+`"This ".concat("has been ").concat("concatenated") #=> "This has been concatenated"`
 
 #### String slices (substrings)
 
@@ -126,9 +127,9 @@ You can access strings inside strings
 integer slice
 "When a non-negative integer argument index is given, the slice is the 1-character substring found in self at character offset index:" (ruby documentation)
 
-`"hello"[0]` #=> "h"`
+`"hello"[0] #=> "h"`
 
-`"hello"[2]` #=> "l"`
+`"hello"[2] #=> "l"`
 
 "When a Range argument range is given, it creates a substring of string using the indices in range."
 
@@ -138,8 +139,8 @@ e.g. `"hello"[0,2]` returns "he" because it starts at index 0 and takes 2 charac
 
 `[0, 2]` would mean "start at index 0, take 2 characters"
 
-`"hello"[0,2]` #=> "he"
-`"hello"[0,1]` #=> "h"
+`"hello"[0,2] #=> "he"`
+`"hello"[0,1] #=> "h"`
 
 #### Escape characters
 
@@ -147,22 +148,28 @@ Escape characters allow you to insert whitespace characters inside a  string tha
 
 Ex:
 
-`"Hello \n\n Hello"` will return
+`"Hello \n\n Hello"`
 
+will return
+
+```ruby
 "Hello
 
 Hello"
+```
 
 More escape characters:
 
-`\ Need a backslash in your string?
+```text
+\ Need a backslash in your string?
 \b  #=> Backspace
 \r  #=> Carriage return
 \n  #=> Newline - common
 \s  #=> Space
 \t  #=> Tab
 \"  #=> Double quotation mark
-\'  #=> Single quotation mark`
+\'  #=> Single quotation mark
+```
 
 #### Interpolation
 
@@ -170,9 +177,11 @@ String interpolation allows you to evaluate a string that contains placeholder v
 
 Example:
 
+```ruby
 name = "Odin"
 `puts "Hello, #{name}"` #=> "Hello, Odin"
 `puts 'Hello, #{name}'` #=> "Hello, #{name}"
+```
 
 #### String Methods
 
@@ -180,45 +189,50 @@ strings come with loads of methods, see the [Ruby Docs](https://docs.ruby-lang.o
 
 capitalize
 
-`"hello".capitalize` #=> "Hello"
+`"hello".capitalize #=> "Hello"`
 
 include
 
-`"hello".include?("lo")` #=> true
+`"hello".include?("lo") #=> true`
 
 upcase
 
-`"hello".upcase` #=> "HELLO"
+`"hello".upcase #=> "HELLO"`
 
 downcase
 
-`"Hello".downcase` #=> "hello"
+`"Hello".downcase #=> "hello"`
 
 empty?
 
-`"hello".empty?` #=> false
-`"".empty?` #=> true
+`"hello".empty? #=> false`
+`"".empty? #=> true`
 
 length
-`"hello".length` #=> 5
+
+`"hello".length #=> 5`
 
 reverse
-`"hello".reverse` #=> "olleh"
+
+`"hello".reverse #=> "olleh"`
 
 split
-`"hello world".split` #=> `["hello", "world"]`
-`"hello".split("")` #=> `["h", "e", "l", "l", "o"]`
+
+`"hello world".split #=> ["hello", "world"]`
+
+`"hello".split("") #=> ["h", "e", "l", "l", "o"]`
 
 strip
-`" hello, world      ".strip` #=> "hello, world"
+
+`" hello, world      ".strip #=> "hello, world"`
 
 #### Converting other objects to strings
 
-`5.to_s` #=> "5"
+`5.to_s #=> "5"`
 
-`nil.to_s` #=> ""
+`nil.to_s #=> ""`
 
-`:symbol.to_s` #=> "symbol"
+`:symbol.to_s #=> "symbol"`
 
 ### Symbols
 
@@ -228,7 +242,7 @@ One common use for symbols over strings are the keys in hashes.
 
 To create a symbol, put a colon at the beginning of some text
 
-:my_symbol
+`:my_symbol`
 
 ### Booleans
 
@@ -274,7 +288,7 @@ It's how to safely get user input without an extra blank line
 
 ex:
 
-```
+```ruby
 print "What's your name?"
 
 name = gets.chomp
@@ -286,29 +300,132 @@ A hash is like a dictionary, it stores key/value pairs
 
 ex:
 
-```
+```ruby
 person = { name: "Ruby", age: 40 }
 puts person[:name] #=> "Ruby"
 ```
 
 #### Run this block times explainer
 
-```
+```ruby
 3.times do |i|
   puts i
 end
 ```
 
 `3.times` tells ruby to run this block 3 times
-`do |i| .. end` defines the block 
+`do |i| .. end` defines the block
 `i` is the looper counter starting at 0
 
 So it runs 3 times with i being 0, then 1, then 2
 
-Key notes: 
+Key notes:
 
 - interpolation means inserting a variable's value into a string
 
 - A Ruby Hash is similar to a JavaScript Object
 
 ### Variables
+
+Declaring a Variable in Ruby:
+
+```ruby
+year = 2025 #=> 2025
+```
+
+You can also assign the result of an expression to a variable
+
+```ruby
+year = 2020 + 5 #=> 2025
+```
+
+Variable names are reusable and can be assigned new variables - doing so will override the previous value
+
+```ruby
+year = 2020
+year #=> 2020
+year = 2025
+year #=> 2025
+```
+
+#### Assignment Operators
+
+There may be scenarios where you want to perform an operation on the original value of a variable and then assign the result of that operation to the variable
+
+```ruby
+year = 2020
+year #=> 2020
+year = year + 5
+year #=> 2025
+```
+
+This is common enough in Ruby there is a shorthand assignment operator for doing this: `+=`
+
+```ruby
+year = 2020
+year += 4 #=> 2025
+```
+
+Here are some similar assignment operators:
+
+```ruby
+year = 2025
+year -= 2 #=> 2023
+
+cash = 10
+cash *= 2 #=> 20
+
+temperature = 40
+temperature /= 10 #=> 4
+```
+
+##### Naming Conventions
+
+Ruby aims to be a language that is easy to read and write. Variable naming conventions reflect this and variables should be named clearly as possible describing what the value of the variable represents.
+
+Naming variables should make it easy for strangers to the code to read and understand, whether someone else or you in a few months when you can't remember the details as well.
+
+Ruby variables should be lowercase and multiple words that make up a variable name should be split by an underscore, snake_case
+
+```ruby
+# bad
+a = 19
+string = "John"
+
+# good
+age = 19
+name = "John"
+can_swim = false
+```
+
+##### Variables as references
+
+Data is stored in memory so when a variable is declared it creates a pointer to that memory location. This can create an issue when a variable is used to point to the memory location pointed to by a different variable
+
+```ruby
+desired_location = "Barcelona"
+johns_location = desired_location
+```
+
+both varibles here would return `"Barcelona"`, weird things can happen when that string is modified.
+
+lets modify that string with the upcase! method
+
+```ruby
+johns_location.upcase! #=> "BARCELONA"
+
+desired_location #=> "BARCELONA"
+```
+
+This has changed the value of desired_location to `BARCELONA`
+
+### Assignments
+
+- Read the [Variables](https://launchschool.com/books/ruby/read/variables) chapter from LaunchSchool's _Introduction to Programming With Ruby_. Most important to note here: you should not use `$global_variables` and `@@class_variables` are rarely needed and easily misused.
+
+- Read these variable lessons by Ruby Monstas:
+  - [Overview of Variables](http://ruby-for-beginners.rubymonstas.org/variables.html)
+  - [Reusing Variable Names](http://ruby-for-beginners.rubymonstas.org/variables/reusing_names.html)
+  - [Things on the Right Go First](http://ruby-for-beginners.rubymonstas.org/variables/right_goes_first.html)
+
+- Use IRB in your command line or an appropriate online REPL environment and try naming some variables and assigning values to them. Don’t worry so much about good naming conventions at this stage. Instead, experiment with different variable names and see what is valid. Try using symbols or numbers in your variable names. Try assigning a variable to another variable and observe the behavior when using upcase!, as in the example above. If you come across anything quirky, Google it to find out why it happened.
