@@ -274,24 +274,30 @@ It's how to safely get user input without an extra blank line
 
 ex:
 
-```print "What's your name? "
+```
+print "What's your name?"
 
 name = gets.chomp
 
-puts "Hello, #{name}!"```
+puts "Hello, #{name}!"
+```
 
 A hash is like a dictionary, it stores key/value pairs
 
 ex:
 
-```person = { name: "Ruby", age: 40 }
-puts person[:name] #=> "Ruby"```
+```
+person = { name: "Ruby", age: 40 }
+puts person[:name] #=> "Ruby"
+```
 
 #### Run this block times explainer
 
-```3.times do |i|
+```
+3.times do |i|
   puts i
-end```
+end
+```
 
 `3.times` tells ruby to run this block 3 times
 `do |i| .. end` defines the block 
@@ -299,5 +305,10 @@ end```
 
 So it runs 3 times with i being 0, then 1, then 2
 
-Key notes: interpolation means inserting a variable's value into a string
+Key notes: 
 
+- interpolation means inserting a variable's value into a string
+
+- A Ruby Hash is similar to a JavaScript Object
+
+### Variables
