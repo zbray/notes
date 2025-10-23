@@ -155,14 +155,14 @@ Hello"
 
 More escape characters:
 
-```\ Need a backslash in your string?
+`\ Need a backslash in your string?
 \b  #=> Backspace
 \r  #=> Carriage return
 \n  #=> Newline - common
 \s  #=> Space
 \t  #=> Tab
 \"  #=> Double quotation mark
-\'  #=> Single quotation mark```
+\'  #=> Single quotation mark`
 
 #### Interpolation
 
@@ -298,3 +298,6 @@ end```
 `i` is the looper counter starting at 0
 
 So it runs 3 times with i being 0, then 1, then 2
+
+Key notes: interpolation means inserting a variable's value into a string
+
