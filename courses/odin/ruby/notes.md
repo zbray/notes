@@ -250,12 +250,12 @@ True and false - means what it says on the tin
 
 Nil - Nil means "nothing." everything in Ruby has a return value, when a piece of code doesn't have anything to return it will return nil.
 
-## Reading
+### Reading
 
 - [Basics chapter of LaunchSchool's _Intro to Programming With Ruby_](https://launchschool.com/books/ruby/read/basics)
 - Alex Chaffee's [Objects write up](https://codelikethis.com/lessons/learn-to-code/objects)
 
-## Homework
+### Homework
 
 - Follow the cloning and installation instructions in the main README of our ruby-exercise repo to set up the exercises.
 - Then, follow the usage instructions in the ruby-basics README to complete the exercises in the 1_data_types folder.
@@ -305,7 +305,7 @@ person = { name: "Ruby", age: 40 }
 puts person[:name] #=> "Ruby"
 ```
 
-#### Run this block times explainer
+### Run this block times explainer
 
 ```ruby
 3.times do |i|
@@ -325,7 +325,7 @@ Key notes:
 
 - A Ruby Hash is similar to a JavaScript Object
 
-### Variables
+## Variables
 
 Declaring a Variable in Ruby:
 
@@ -348,7 +348,7 @@ year = 2025
 year #=> 2025
 ```
 
-#### Assignment Operators
+### Assignment Operators
 
 There may be scenarios where you want to perform an operation on the original value of a variable and then assign the result of that operation to the variable
 
@@ -379,7 +379,7 @@ temperature = 40
 temperature /= 10 #=> 4
 ```
 
-##### Naming Conventions
+### Naming Conventions
 
 Ruby aims to be a language that is easy to read and write. Variable naming conventions reflect this and variables should be named clearly as possible describing what the value of the variable represents.
 
@@ -398,7 +398,7 @@ name = "John"
 can_swim = false
 ```
 
-##### Variables as references
+### Variables as references
 
 Data is stored in memory so when a variable is declared it creates a pointer to that memory location. This can create an issue when a variable is used to point to the memory location pointed to by a different variable
 
@@ -429,3 +429,41 @@ This has changed the value of desired_location to `BARCELONA`
   - [Things on the Right Go First](http://ruby-for-beginners.rubymonstas.org/variables/right_goes_first.html)
 
 - Use IRB in your command line or an appropriate online REPL environment and try naming some variables and assigning values to them. Don’t worry so much about good naming conventions at this stage. Instead, experiment with different variable names and see what is valid. Try using symbols or numbers in your variable names. Try assigning a variable to another variable and observe the behavior when using upcase!, as in the example above. If you come across anything quirky, Google it to find out why it happened.
+
+## Input and Output
+
+Lesson Overview:
+
+- Differienate between the print and puts commands
+- Describe the method used to get input from the user
+
+### Output commands
+
+To output infromation we can use the print command.
+
+`puts` appends a new line to the argument passed in
+`print` keeps things on one line.
+
+both `puts` and `prints` return `nil` after printing whatever argument they are passed.
+
+Semicolons are never required in ruby but they allow you run multiple commands all on one line. This type of code golf is not generally recommended but is helpful to see what's happening with `puts` and `prints`.
+
+### Input commands
+
+To accept input from a user we use the `gets` command.
+
+When using `gets` program execution will stop and wait for user input. After the user inputs and sends their input the pgram will continue its execution.
+
+```ruby
+irb(main):001:0> gets
+The Odin Project
+=> "The Odin Project\n"
+```
+
+Whereas `puts` and `print` return `nil` at the end, `gets` returns the user input. This means the input can be assigned to a variable so that we can use, manipulate, twist and turn, and spit back out.
+
+### Assignment
+
+1. Read through and complete the exercise from [learnrubyonline.org’s “Hello, World” lesson](https://www.learnrubyonline.org/en/Hello_World)
+2. Read the first four sections (puts, gets, putc, and print) of the Ruby - [File I/O](https://www.tutorialspoint.com/ruby/ruby_input_output.htm) from TutorialsPoint.
+3. Read [this Ruby guides article](https://www.rubyguides.com/2018/10/puts-vs-print/) describing the differences between puts, print, and p.

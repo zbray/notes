@@ -9,6 +9,7 @@
 <https://edabit.com/>
 <https://codingame.com>
 <https://leetcode.com/>
+<https://www.codewars.com/dashboard>
 
 ### Courses
 

@@ -11,33 +11,48 @@
 
 # end
 
-name = "Joe"
+##Variables
 
-if name == "Tim"
-  puts "Hi, #{name}"
+# name = "Joe"
 
-elsif name == "Joe"
-  puts "Bye, #{name}"
+# if name == "Tim"
+#   puts "Hi, #{name}"
 
-else
-  puts "I don't know you."
+# elsif name == "Joe"
+#   puts "Bye, #{name}"
 
-end
+# else
+#   puts "I don't know you."
 
-puts 10 / 3
+# end
 
-puts "Hello, #{name}"
-puts 'Hello, #{name}'
+# puts 10 / 3
+
+# puts "Hello, #{name}"
+# puts 'Hello, #{name}'
 
 
-5.times do |i|
-  puts i * 2
-end
+# 5.times do |i|
+#   puts i * 2
+# end
 
-item = "Coffee"
-price = 4.50
-quantity = 2
-tax = 0.45
+# item = "Coffee"
+# price = 4.50
+# quantity = 2
+# tax = 0.45
 
-puts "Item: #{item}"
-puts "Price"
+# puts "Item: #{item}"
+# puts "Price"
+
+# Semi-colon
+
+# puts "Learning to code is FUN!"
+
+# print "Hello World"; print "I love drinking coffee"
+
+#Input
+
+gets
+The Odin Project
+=> "The Odin Project\n"
+
