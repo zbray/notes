@@ -1,10 +1,14 @@
 # CSS Basics
 
+## Tips
+
+`<br>` and `br { display: none; }`
+
+Prevent CMS users abusing multiple line breaks for spacing.
+
 ## What is CSS?
 
 CSS is a style sheet language used to selectively style HTML elements.
-
-
 
 ```css
 p {
@@ -12,22 +16,21 @@ p {
 }
 ```
 
-CSS code includes a Selector and a Declaration. 
+CSS code includes a Selector and a Declaration.
 
 The Selector (`p` tag in this example) selects the HTML element to be stylized and the Declaration is the rule.
 
 The Declaration here is made of the Property and Property Value, here the `color` property is being set to `red`
- 
+
 ## How is it used?
 
-### **Inline CSS** 
+### **Inline CSS**
 
-Inline styles are defined within the "style" attribute of the individual element to be stylized, although this is not recommended. 
+Inline styles are defined within the "style" attribute of the individual element to be stylized, although this is not recommended.
 
 ```html
 <p style="background:blue"></p>
 ```
-
 
 ### **Internal CSS**
 
@@ -53,7 +56,6 @@ To connect the HTML document to the external CSS document you will add a link el
 
 The link element needs two properties: the `rel` which determines the role the linked file has in relationship to the HTML file and the `href` which lists the directory
 
-
 ```html
 <link href="./styles.css" rel="stylesheet" />
 ```
@@ -66,7 +68,12 @@ CSS code is made of 3 parts
 
 selector (paragraph tags), property (color) and value (blue)
 
-#### Types of Selectors
+```css
+selector {
+  property: value;
+}
+
+### Types of Selectors
 
 **Element Selector** A selector that applies to every occurance of a selector
 
@@ -118,7 +125,6 @@ p[draggable="false"] {
 
 The code above will make all `p` elements with the draggable value of `false` red.
 
-
 **Universal Selector** will apply to every element
 
 ```css
@@ -127,9 +133,24 @@ The code above will make all `p` elements with the draggable value of `false` re
 }
 ```
 
-Some CSS tips:
-- Every CSS rule needs to end with a semicolon.
+Universal Selector This will select everything
 
+```css
+* {
+  color: black;
+}
+```
+
+### Element Selector
+
+This will select every element of a given type
+
+```css
+img {
+  width: 100px;
+  height: 100px;
+}
+```
 
 ### Colors
 
@@ -174,7 +195,7 @@ family)
 
 There are different units for font sizes.
 
-#### Relative:
+#### Relative
 
 EM:
 REM:
@@ -182,7 +203,7 @@ VH:
 VW:
 %:
 
-#### Absolute:
+#### Absolute
 
 PX: pixels, most commonly used absolute unit. not recommended for responsive websites
 PT: points,
@@ -190,46 +211,7 @@ CM: centimeters
 IN: inches
 MM: milimeters
 
-https://blog.revathskumar.com/2014/04/css-understanding-em-and-rem.html
-
-### CSS Specificity
-
-How does CSS decide what style to apply when there is a conflict
-
-### CSS Selectors
-
-Recap on CSS Rules:
-
-Everything you do in CSS follows this basic pattern:
-
-```css
-selector {
-  property: value;
-}
-```
-
-#### Universal Selector This will select everything
-
-```css
-* {
-  color: black;
-}
-```
-
-#### Element Selector
-
-This will select every element of a given type
-
-```css
-img {
-  width: 100px;
-  height: 100px;
-}
-```
-
-### Pseudo elements
-
-
+<https://blog.revathskumar.com/2014/04/css-understanding-em-and-rem.html>
 
 ### CSS Variables
 
@@ -241,3 +223,45 @@ For example if our main text color is a certain shade of blue instead of typing 
 
 There are 4 offset properties, `top`,`bottom`, `left` and `right` that will tell the browser how far to offset an item relative to where it would be in the normal flow of the html document in the direction away from the named property.
 
+## CSS Properties
+
+### CSS Text Properties
+
+`font-weight`: controls the boldness or lightness of a given piece of text (400 is normal and 700 is bold) (not all font-weight numbers exist for all fonts)
+
+`text-decoration`: controls the appearance of lines on text (under, over, through; colored, dotted, etc)
+
+`text-align`: sets the horizontal alignment inside a block element or table-cell box
+
+`text-align: justify;`
+
+`line-height`: controls the height of a text box.
+
+`letter-spacing`: sets horizontal spacing between characters
+
+`font-family`: used as a list of fonts in order of preference for users to fall back on if they are not available.
+(first font: specific
+second font: less specific/2nd option
+family)
+
+line-height
+This changes the height of each line in a block of text. This changes the amount of vertical space each line of text gets.
+
+#### text-transform
+
+The `text-transform` property in CSS is used to change the appearance of text. It's a convenient way to make sure text on a webpage appears consistently, without having to change the text content of the actual HTML elements.
+
+The below values and their effect on the text "Transform me"
+
+`lowercase` => "transform me"
+`uppercase` => "TRANSFORM ME"
+`capitalize` => "Transform Me"
+`initial` => uses the default value
+`inherit` => uses the value from the parent element
+`none` => Default: uses the original text
+
+### Shapes and Shading
+
+The `box-shadow` property creates a rectangular shadow behind an element's entire box
+
+`drop-shadow` filter function creates a shadow that conforms to the shape (alpha channel) of the image itself

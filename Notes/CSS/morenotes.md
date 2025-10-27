@@ -8,7 +8,7 @@ Relative: Percentages (%), Font-sizes (em & rem), Character-sizes (ex & ch), Vie
 
 Relative Lengths
 
-Relative lengths get their measurements based on something else: 
+Relative lengths get their measurements based on something else:
 
 1. Their parents’ dimensions (%)
 2. The currently declared font-attributes (em, rem, ex, ch)
@@ -18,11 +18,11 @@ Percentages (%) - Percentages of the parent element
 
 - If a parent element has a width of 300px and a child element has a width of 50%, the actual width of the child element will be 150px.
 
-Viewheight (vh) and Viewwidth (vw) - 
+Viewheight (vh) and Viewwidth (vw) -
 
 - Vh and vw divide the viewport into a grid system of 100x100 units regardless of viewport size. This unit locks the value to relative to the width or height of the viewport. An element with a width of 75vw will have an actual with of 75% of the viewport regardless of the size of the viewport or the placement of the element on the webpage.
 
-Viewport Minimum (vmin) 
+Viewport Minimum (vmin)
 
 - This unit will respond to the lower of two dimensions of the viewport. A value of 50vmin will be equal to half of either the height or the width of a viewport depending on which dimension is currently lower. If the viewport has less height than it does width, the vmin unit will define the element’s height. If the viewport has less width than it does height, the vmin unit will define the element’s width.
 
@@ -30,7 +30,6 @@ Viewport Maximum (vmax)
 
 - This unit will respond to the higher of two dimensions of the viewport. A value of 50vmax will be equal to half of either the height or the width of a viewport depending on which dimension is currently higher. If the viewport has more height than it does width, the vmax unit will define the element’s height. If the viewport has more width than it does height, the vmax unit will define the element’s width.
 
-  
 Font attribute based units:
 
 1. ex (“x” height)
@@ -43,7 +42,6 @@ Height of x (ex)
 This unit’s value will be declared by the visible height of the lower-case x in the current font-family and font-size.
 
 Note: This is similar to the typography concept, x-height. X is a good choice for something like this as the character does not have an ascender or descender (parts or serifs that cross the top plane or bottom plane of the character.
-
 
 Width of 0 (ch)
 
@@ -69,6 +67,7 @@ Inches (in)
 Centimeters (cm)
 Millimeters (mm)
 Point (pt)
+
 - 1/72nd of an inch
 Pica (pc)
 - 12 points, or 1/6th of an inch

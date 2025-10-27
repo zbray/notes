@@ -8,9 +8,9 @@ Reason: You can use high-order functions to write less bugs in less time
 
 Filter: is a method on the array object  that accepts another function as it’s argument which it will use to return another filtered version of the array.
 
-Let’s start with an array of animals [1] and you want to create a new array from that animals array with just the dogs, you could do that with a for loop [2] resulting in the desired array.
+Let’s start with an array of animals (1) and you want to create a new array from that animals array with just the dogs, you could do that with a for loop (2) resulting in the desired array.
 
-[1]
+(1)
 `var animals = [`
 `{ name: 'Fluffykins',  species: 'rabbit' },`
 `{ name: 'Caro',        species: 'dog' },`
@@ -20,7 +20,7 @@ Let’s start with an array of animals [1] and you want to create a new array fr
 `{ name: 'Jimmy',  species: 'fish' }`
 `]`
 
-[2]
+(2)
 `var dogs = []`
 `for (var i = 0; i < animals.length; i++) {`
 `if (animals[i].species === 'dog')`
@@ -81,7 +81,7 @@ Review: Functions are values, you can exploit this by making functions that take
 
 Setup: Map, like filter is a higher order function and a method on the array object. Unlike filter, map doesn’t remove/catch things from an array but instead transforms them.
 
-Goal: We have an array of animals [1] (identical to Part 1) and we want to grab only the names of the animals.
+Goal: We have an array of animals (1) (identical to Part 1) and we want to grab only the names of the animals.
 
 `var animals = [`
 `{ name: 'Fluffykins',  species: 'rabbit' },`
@@ -91,16 +91,16 @@ Goal: We have an array of animals [1] (identical to Part 1) and we want to grab 
 `{ name: 'Ursula',  species: 'cat' },`
 `{ name: 'Jimmy',  species: 'fish' }`
 `]`
-[1]
+(1)
 
-Let’s do this first using a for loop [2]
+Let’s do this first using a for loop (2)
 
 `var names = []`
 `for (var i = 0; i< animals.length; i++) {`
 `names.push(animals[i].name)`
 `}`
 `console.log(names)`
-[2]
+(2)
 
 This for loop loops through the animal array, and for each animal it just picks the name property and pushes it into the names array and the console log prints the list of names.
 

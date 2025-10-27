@@ -1,3 +1,3 @@
-## Flex Box
+# Flex Box
 
 `display:flex;` activates Flexbox

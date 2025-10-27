@@ -1,6 +1,6 @@
-## CSS Examples
+# CSS Examples
 
-#### This code will add red border to images without alt text
+This code will add red border to images without alt text
 
 ```css
 img:not([alt]) {
@@ -8,14 +8,13 @@ img:not([alt]) {
 }
 ```
 <!-- Smooth Scrolling needs context -->
-### Smooth scrolling
+## Smooth scrolling
 
 ```css
 html {scroll-behaivor: smooth;}
 ```
 
-
-### Animate on Hove
+## Animate on Hove
 
 ```css
 .card {
