@@ -41,3 +41,5 @@ https://dribbble.com/antalik
 https://bentogrids.com/ - Bento Grids
 
 https://component.gallery/ - Comonent gallery
+
+https://www.joshwcomeau.com/react/folding-the-dom/ - Neat CSS effects
