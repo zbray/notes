@@ -1,4 +1,4 @@
-## Career Advice
+# Career Advice
 
 - don't take the first job
 - research every offer
@@ -13,22 +13,14 @@
 - network
 
 ## Learning Advice
+
 - be hyperfocused
 - Javascript, React, API calls
 - Code daily
 - 1-3 practice problems a day
 
-
-##  Portfolio Tips
+## Portfolio Tips
 
 - Show off passion. Don’t just have a laundry list of projects. Include why you love this work.
 - keep it up to date
 - prioritize client work
-
-Candidates have fallen out of testing due to some core lackings:
-- semantic html elements
-- box model
-- knowing the difference between block and inline
-- responsive units and @media queries
-- brower compatibility
-- relying too much on frameworks like bootstrap

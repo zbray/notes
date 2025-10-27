@@ -12,15 +12,15 @@
 
 ### Courses
 
-https://matt.might.net/articles/what-cs-majors-should-know/
+<https://matt.might.net/articles/what-cs-majors-should-know/>
 
-https://learnxinyminutes.com
+<https://learnxinyminutes.com>
 
-https://teachyourselfcs.com/
+<https://teachyourselfcs.com/>
 
-https://natureofcode.com/random/
+<https://natureofcode.com/random/>
 
-https://fullstackopen.com/en/about/
+<https://fullstackopen.com/en/about/>
 
 #### AWS
 
@@ -96,9 +96,9 @@ Compress Images - <https://compressor.io/>
 
 ### Fonts
 
-https://www.cssfontstack.com/
+<https://www.cssfontstack.com/>
 
-https://www.brailleinstitute.org/freefont/
+<https://www.brailleinstitute.org/freefont/>
 
 ### Misc
 
@@ -132,6 +132,6 @@ GBDev Docs - <https://gbdev.io/pandocs/>
 
 Tutorial - <https://videlais.com/2016/07/03/programming-game-boy-games-using-gbdk-part-1-configuring-programming-and-compiling/>
 
-# Swift
+## Swift
 
 Apple Tutorials - <https://developer.apple.com/tutorials/develop-in-swift/>
