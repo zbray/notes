@@ -407,7 +407,7 @@ desired_location = "Barcelona"
 johns_location = desired_location
 ```
 
-both varibles here would return `"Barcelona"`, weird things can happen when that string is modified.
+both variables here would return `"Barcelona"`, weird things can happen when that string is modified.
 
 lets modify that string with the upcase! method
 
@@ -434,12 +434,12 @@ This has changed the value of desired_location to `BARCELONA`
 
 Lesson Overview:
 
-- Differienate between the print and puts commands
+- Differentiate between the print and puts commands
 - Describe the method used to get input from the user
 
 ### Output commands
 
-To output infromation we can use the print command.
+To output information we can use the print command.
 
 `puts` appends a new line to the argument passed in
 `print` keeps things on one line.
@@ -452,7 +452,7 @@ Semicolons are never required in ruby but they allow you run multiple commands a
 
 To accept input from a user we use the `gets` command.
 
-When using `gets` program execution will stop and wait for user input. After the user inputs and sends their input the pgram will continue its execution.
+When using `gets` program execution will stop and wait for user input. After the user inputs and sends their input the program will continue its execution.
 
 ```ruby
 irb(main):001:0> gets
@@ -467,3 +467,216 @@ Whereas `puts` and `print` return `nil` at the end, `gets` returns the user inpu
 1. Read through and complete the exercise from [learnrubyonline.org’s “Hello, World” lesson](https://www.learnrubyonline.org/en/Hello_World)
 2. Read the first four sections (puts, gets, putc, and print) of the Ruby - [File I/O](https://www.tutorialspoint.com/ruby/ruby_input_output.htm) from TutorialsPoint.
 3. Read [this Ruby guides article](https://www.rubyguides.com/2018/10/puts-vs-print/) describing the differences between puts, print, and p.
+
+## Conditional Logic
+
+Conditional logic is when code will only execute under certain conditions.
+
+Any conditional statement, (ex `if room_dirty`) will always evaluate to either true or false.
+
+Conditional statements that evaluate true will execute code, if the statement evaluates false the code will be skipped. You can provide code to run for false statements as well as adding multiple conditional statements on one line but this is not clean code.
+
+Conditional statements introduce many bugs so be sure to understand the logic behind the expression being evaluated so you can step through the code to fix any bugs.
+
+### Section Overview
+
+- Describe and list falsy values
+- Explain how to use `if`, `elsif`, and `else`.
+- Explain the difference between `if` and `unless`
+- Describe what `||`, `&&` and `!` do.
+- Explain what short circuit evaluation is.
+- Describe what the ternary operator is and how to use it.
+- Explain what a `case` statement is and how it works.
+
+### True and Falsy in Ruby
+
+False values are simple in ruby, just `nil` and `false` values. Everything else is considered true. Even the string `"false"` is true in conditional expressions. Other programming languages may consider the number 0 or an empty string ("") to be false, but not in ruby.
+
+### Basic conditional statement
+
+The simplest way to control the flow of your code using conditionals is with the `if` statement.
+
+```ruby
+if statement_to_be_evaluated == true
+  # do something
+end
+
+if 1 < 2
+  puts "1 is less than 2!"
+end
+#=> 1 is less than 2!
+```
+
+You can also make the code fit on one line:
+
+```ruby
+puts "1 is less than 2" if 1 > 2
+```
+
+One line conditional statements do not require `end` statement
+
+Conditional statements can be anything that returns true or false; it can be a mathematical expression, a variable value, or a call to a method. Only if the expression evaluates to true does the code inside the block run.
+
+### else and elsif
+
+You'll often need to run a condition if a statement is true and run something else if the code is false, that's done with an `if else` statement.
+
+```ruby
+if attack_by_land == true
+  puts "release the goat"
+else
+  puts "release the shark"
+end
+```
+
+But what if there's a third option? attacked by air? that'll require an `if...elsif...else` statement
+
+```ruby
+if attack_by_land == true
+  puts "release the goat"
+elsif attack_by_sea == true
+  puts "release the shark"
+else
+  puts "release Starro"
+end
+```
+
+You can use as many `elsif` statements as you want. The else clause is optional, but you'll usually want to provide some default value.
+
+### Boolean logic
+
+To determine whether an expression evaluates to `true` or `false` you'll need a comparison operator, Ruby provides many:
+
+`==` returns true if the values compared are equal
+
+```ruby
+5 == 5 #=> true
+5 == 6 #=> false
+```
+
+`!=` (not equal) returns `true` if the values compared are not equal.
+
+```ruby
+5 != 7 #=> true
+5 != 5 #=> false
+```
+
+`>` (greater than) than returns `true` if the value on the left of the operator is lager than the value on the right
+
+```ruby
+7 > 5 #=> true
+5 > 7 #=> false
+```
+
+`<` (less than)  returns `true` if the value on the left of the operator is less than the value on the right
+`>=` (greater than or equal to) returns `true` if the value on the left of the operator is larger than or equal to the value on the right.
+
+```ruby
+7 >= 7 #=> true
+7 >= 5 #=> true
+```
+
+`<=` (less than or equal to) returns true if the value on the left of the operator is smaller than or equal to the value on the right.
+
+```ruby
+5 <= 5 #-> true
+5 <= 5 #=> true
+```
+
+`equal?` checks whether both values are the exact same object in memory. Two variables pointing to the same number will usually return `true`
+
+```ruby
+a = 5
+b = 5
+a.equal?(b) #=> true
+```
+
+Because of the way integers are stored in memory these will return `true`
+
+However, look at the next example:
+
+```ruby
+a = "hello"
+b = "hello"
+a.equal?(b) #=> false
+```
+
+This happens because computers don't store different string objects at the same location in memory and since equal is checking both sides of the operator for being the same object in memory it will return false.
+
+Ruby has a special operator called the "spaceship operator." `<=>`
+
+Unlike the other comparison operators, which all return true or false, the spaceship operator has 3 potential results:
+
+`-1` if the value on the left is less than the value on the right
+`0` if both values are equal
+`1` if the value on the left is greater than the value on the right
+
+The spaceship operator is most commonly used in sorting functions, which we'll cover more later.
+
+All these operators work on data types other than numbers, such as strings.
+
+### Logical operators
+
+Some operators will need more than one condition. in ruby we do that using logical operators, `&&` (and) `||` (or) and `!` (not)
+
+There are some differences between the word versions and their symbolic equivalents in the way they evaluate code. See this [video](https://avdi.codes/how-to-use-rubys-english-andor-operators-without-going-nuts/)
+
+The `&&` operator returns `true` if both the left and right expressions return `true`
+
+```ruby
+if 1 < 2 && 5 < 6
+  puts "Party at Kevin's!"
+end
+
+# This can also be written as
+if 1 < 2 and 5 < 6
+  puts "Party at Kevin's!"
+end
+```
+
+Note: the `&&` and `||` operators follow an order of logic that evaluates from left to right.
+
+Using the `&&` operator both expressions must return `true`. If the first expression encountered returns `false` the second expression is never checked.
+
+Using the `||` operator, if the first expression evaluates to `true`, then the second expression is never checked because the complete expression is already `true`, and the code in the block is run.
+
+This is known as a short circuit evaluation.
+
+```ruby
+if 10 < 2 || 5 < 6 #=> although the left expression is false, it returns true because the right expression returns true.
+  puts "Party at Kevin's!"
+end
+
+# This can also be written as
+if 10 < 2 or 5 < 6
+  puts "Party at Kevin's!"
+end
+```
+
+The `!` operator reverses the logic of the expression. If the expression returns `false` using the `!` operator makes the expression `true` and the code inside the block will be executed.
+
+```ruby
+if !false #=> true
+
+if !(10 < 5) #=> true
+```
+
+### Case statements
+
+Case statements are a neat way of writing several conditional expressions that would normally be written as a messy if...elsif statement. You can even assign the return value from a case statement to a variable for use later.
+
+Casae statements process each condition in turn, and if the condition returns `false` it will move onto the next one until a match is found. An `else` clause can be provided to serve as a default if no match is found.
+
+```ruby
+grade = 'F'
+
+did_i_pass = case grade
+  when 'A' then "Hell yeah!"
+  when 'D' then "Don't tell your mother."
+  else "'You shall not pass"
+end
+```
+
+As soon as a match is found the value of that match is returned and the case statement stops executing.
+
+If you need to do 
