@@ -419,7 +419,7 @@ desired_location #=> "BARCELONA"
 
 This has changed the value of desired_location to `BARCELONA`
 
-### Assignments
+### Assignments - Variables
 
 - Read the [Variables](https://launchschool.com/books/ruby/read/variables) chapter from LaunchSchool's _Introduction to Programming With Ruby_. Most important to note here: you should not use `$global_variables` and `@@class_variables` are rarely needed and easily misused.
 
@@ -462,7 +462,7 @@ The Odin Project
 
 Whereas `puts` and `print` return `nil` at the end, `gets` returns the user input. This means the input can be assigned to a variable so that we can use, manipulate, twist and turn, and spit back out.
 
-### Assignment
+### Assignment - I/O
 
 1. Read through and complete the exercise from [learnrubyonline.org’s “Hello, World” lesson](https://www.learnrubyonline.org/en/Hello_World)
 2. Read the first four sections (puts, gets, putc, and print) of the Ruby - [File I/O](https://www.tutorialspoint.com/ruby/ruby_input_output.htm) from TutorialsPoint.
@@ -488,7 +488,7 @@ Conditional statements introduce many bugs so be sure to understand the logic be
 - Describe what the ternary operator is and how to use it.
 - Explain what a `case` statement is and how it works.
 
-### True and Falsy in Ruby
+### Truthy and Falsy in Ruby
 
 False values are simple in ruby, just `nil` and `false` values. Everything else is considered true. Even the string `"false"` is true in conditional expressions. Other programming languages may consider the number 0 or an empty string ("") to be false, but not in ruby.
 
@@ -679,4 +679,81 @@ end
 
 As soon as a match is found the value of that match is returned and the case statement stops executing.
 
-If you need to do 
+If you need to do more code than just return true you can remove `then` and add the code to be executed in the next line
+
+```ruby
+case grade
+when 'A'
+  puts "You're a genius"
+  future_bank_account_balance = 5_000_000
+when 'D'
+  puts "Better luck next time
+  can_i_retire_soon = false
+else
+  puts "YOU SHALL NOT PASS"
+  fml = true
+end
+```
+
+### Unless Statements
+
+`unless` statements work in the opposite way as an `if` statement: it only processes code in the block if the expression evaluates to `false`
+
+```ruby
+age = 19
+unless age <18
+  puts "you cannot vote"
+end
+```
+
+Just like with `if` statements you can write an `unless` statement on one line and you can add an else clause
+
+```ruby
+age = 19
+puts "you can vote" unless age <18
+
+unless age < 18
+  puts "down with that"
+else
+  puts "careful now!"
+end
+```
+
+Use case: You should use `unless` statement when you want to not do something if a condition is `true` because it can make your code more readable than using `if ! true`
+
+### Ternary operator
+
+The ternary operator is a one-line `if...else` statement that can make your code much more concise.
+
+Its syntax is `condition ? <execute if true> : <execute if false>`
+You can assign the return value of the expression to a variable
+
+```ruby
+age = 19
+response = age < 18 ? "You still have your entire life ahead of you." : "You're all grown up."
+puts response #=> "You're all grown up."
+end
+```
+
+In the above example because the expression evaluated to false the code after the `:` was assigned to the variable `response`
+
+Writing this as an if...else statement would be so much more verbose:
+
+```ruby
+age = 19
+if age < 18
+  response = "you are young."
+else
+  response = "you are old."
+end
+```
+
+However, if your conditional statements are complicated, then using an `if...else` statement can be more readable.
+
+Above all else, your code needs to be readable and understandable by other people.
+
+### Assignment - Conditional Logic
+
+1. For more depth, read the [Flow Control](https://launchschool.com/books/ruby/read/flow_control#conditionals) chapter from LaunchSchool's _Intro to Programming with Ruby_
+2. For an overview of flow control, read through this [Ruby Explained: Conditionals and Flow Control](https://www.eriktrautman.com/posts/ruby-explained-conditionals-and-flow-control)
+

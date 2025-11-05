@@ -52,7 +52,10 @@
 
 #Input
 
-gets
-The Odin Project
-=> "The Odin Project\n"
+# gets
+# The Odin Project
+# => "The Odin Project\n"
 
+age = 14
+response = age < 18 ? "You still have your entire life ahead of you." : "You're all grown up."
+puts response
