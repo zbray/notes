@@ -756,4 +756,3 @@ Above all else, your code needs to be readable and understandable by other peopl
 
 1. For more depth, read the [Flow Control](https://launchschool.com/books/ruby/read/flow_control#conditionals) chapter from LaunchSchool's _Intro to Programming with Ruby_
 2. For an overview of flow control, read through this [Ruby Explained: Conditionals and Flow Control](https://www.eriktrautman.com/posts/ruby-explained-conditionals-and-flow-control)
-
