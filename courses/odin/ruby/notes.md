@@ -583,7 +583,14 @@ To determine whether an expression evaluates to `true` or `false` you'll need a 
 5 <= 5 #=> true
 ```
 
-`equal?` checks whether both values are the exact same object in memory. Two variables pointing to the same number will usually return `true`
+`#eql?` checks both the value type and the actual value it holds.
+
+```ruby
+5.eql?(5.0) #=> false, one is an integer and the other a float
+5.eql?(5) #=> true
+```
+
+`#equal?` checks whether both values are the exact same object in memory. Two variables pointing to the same number will usually return `true`
 
 ```ruby
 a = 5
